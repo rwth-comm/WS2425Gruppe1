@@ -7,9 +7,9 @@
 
 # Forschungsfrage
 
--   Wie unterscheiden sich Akzeptanz und Nutzungsverhalten von
-    BürgerInnen gegenüber verschiedenen KI-gestützten Diensten in der
-    Kommunalverwaltung?
+-   Welche Faktoren haben einen Einfluss auf die Akzeptanz und das
+    Nutzungsverhalten von Bürger\*innen bei verschiedenen KI-gestützten
+    Diensten in der Kommunalverwaltung?
 
 # Faktorenraum
 
