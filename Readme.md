@@ -13,4 +13,8 @@
 
 # Faktorenraum
 
-Hier wird später ein Bild eingebunden.
+<figure>
+<img src="readme_files/Faktorenraum_Gruppe%201.jpeg"
+alt="Faktorenraum" />
+<figcaption aria-hidden="true">Faktorenraum</figcaption>
+</figure>

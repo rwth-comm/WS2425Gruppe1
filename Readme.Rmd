@@ -14,4 +14,4 @@ date: "2024-10-24"
 * Welche Faktoren haben einen Einfluss auf die Akzeptanz und das Nutzungsverhalten von Bürger*innen bei verschiedenen KI-gestützten Diensten in der Kommunalverwaltung?
 
 # Faktorenraum
-Hier wird später ein Bild eingebunden.
+![Faktorenraum](readme_files/Faktorenraum_Gruppe 1.jpeg)
