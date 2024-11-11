@@ -56,3 +56,5 @@ Springer, Cham.
 > -   Vertrauen: Trust in Automation Scale (TiA) nach [Körber
 >     (2018)](https://link.springer.com/chapter/10.1007/978-3-319-96074-6_2 "Körber, M.(2018. Theoretical Considerations and Development of a Questionnaire to Measure Trust in Automation. In: Proceedings of the 20th Congress of the International Ergonomics Association (IEA 2018), Springer, Cham.")
 >     in X Items.
+
+# Hypothesen
