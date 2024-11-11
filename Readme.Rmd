@@ -18,7 +18,7 @@ date: "2024-10-24"
 # Faktorenraum
 ![Faktorenraum](readme_files/Faktorenraum_Gruppe 1.jpeg)
 
-> Auch hier gefällt mir der Faktorenraum sehr gut mit ein bisschen Luft nach oben. Ich persönlich würde die Literaturangabe aus dem Bild entfernen, ansonsten sieht es ein bisschen komisch aus, dass zu den zahlreichen Faktoren nur eine Quelle angegeben ist. Bei den Nutzerfaktoren und den Technikfaktoren sind ein paar dabei, die ebenfalls nach abhängiger Variable klingen. Bitte überlegen Sie nochmal, wann was abgefragt werden soll. 
+> Auch hier gefällt mir der Faktorenraum sehr gut mit ein bisschen Luft nach oben. Ich persönlich würde die Literaturangabe aus dem Bild entfernen, ansonsten sieht es ein bisschen komisch aus, dass zu den zahlreichen Faktoren nur eine Quelle angegeben ist. Bei den Nutzerfaktoren und den Technikfaktoren sind ein paar dabei, die ebenfalls nach abhängiger Variable klingen. Bitte überlegen Sie nochmal, wann was abgefragt werden soll. Als letzten Kritikpunkt finde ich ein paar Faktoren nicht sehr "sprechend", z.B. Digitalisierungsgrad (von was? Der eigenen Demografie?) und Vorerfahrung.
 
 # Operationalisierung
 Die Trust in Automation Scale von Körber (2018) ist eine validierte Skala, die Vertrauen in automatisierte Technologien misst. Sie wurde entwickelt, um das Vertrauen in Automatisierungssysteme, einschließlich KI und Robotik, zu erfassen.

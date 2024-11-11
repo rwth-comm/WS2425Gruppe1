@@ -33,7 +33,10 @@ alt="Faktorenraum" />
 > zahlreichen Faktoren nur eine Quelle angegeben ist. Bei den
 > Nutzerfaktoren und den Technikfaktoren sind ein paar dabei, die
 > ebenfalls nach abhängiger Variable klingen. Bitte überlegen Sie
-> nochmal, wann was abgefragt werden soll.
+> nochmal, wann was abgefragt werden soll. Als letzten Kritikpunkt finde
+> ich ein paar Faktoren nicht sehr “sprechend”, z.B.
+> Digitalisierungsgrad (von was? Der eigenen Demografie?) und
+> Vorerfahrung.
 
 # Operationalisierung
 
