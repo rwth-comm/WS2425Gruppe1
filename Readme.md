@@ -9,7 +9,14 @@
 
 -   Welche Faktoren haben einen Einfluss auf die Akzeptanz und das
     Nutzungsverhalten von Bürger\*innen bei verschiedenen KI-gestützten
-    Diensten in der Kommunalverwaltung?
+    Diensten in der Kommunalverwaltung? &gt; Feedback JRH: Die
+    Forschungsfrage passt handwerklich sehr gut, im Zusammenspiel mit
+    dem Faktorenraum gibt es aber noch ein bisschen Potential. Sie
+    lernen das erst im 3. Semester, aber Akzeptanz wird in allen
+    gängigen Technikakzeptanzmodellen als Nutzungsintention
+    operationalisiert. Trust in Automation (TIA) ist eine super
+    recherchierte Skala, ist allerdings per Definition eine abhängige
+    Variable und sollte daher nach dem Szenario gemessen werden.
 
 # Faktorenraum
 
@@ -18,6 +25,8 @@
 alt="Faktorenraum" />
 <figcaption aria-hidden="true">Faktorenraum</figcaption>
 </figure>
+
+> Test
 
 # Operationalisierung
 
