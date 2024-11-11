@@ -7,9 +7,9 @@
 
 # Forschungsfrage
 
--   Welche Faktoren haben einen Einfluss auf die Akzeptanz und das
-    Nutzungsverhalten von Bürger\*innen bei verschiedenen KI-gestützten
-    Diensten in der Kommunalverwaltung?
+-   Welche Faktoren haben einen Einfluss auf die Nutzungsintention von
+    Bürger\*innen bei verschiedenen KI-gestützten Diensten in der
+    Kommunalverwaltung?
 
 > Feedback JRH: Die Forschungsfrage passt handwerklich sehr gut, im
 > Zusammenspiel mit dem Faktorenraum gibt es aber noch ein bisschen
