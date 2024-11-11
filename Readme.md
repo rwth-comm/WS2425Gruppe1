@@ -22,7 +22,7 @@
 # Faktorenraum
 
 <figure>
-<img src="readme_files/Faktorenraum_Gruppe%201.jpeg"
+<img src="readme_files/Faktorenraum_Gruppe%201.png"
 alt="Faktorenraum" />
 <figcaption aria-hidden="true">Faktorenraum</figcaption>
 </figure>
