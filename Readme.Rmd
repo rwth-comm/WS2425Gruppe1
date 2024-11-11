@@ -26,4 +26,5 @@ Die Trust in Automation Scale von Körber (2018) ist eine validierte Skala, die 
 Quelle: Körber, M. (2018). Theoretical Considerations and Development of a Questionnaire to Measure Trust in Automation. In: Proceedings of the 20th Congress of the International Ergonomics Association (IEA 2018), Springer, Cham.
 
 > Gefällt mir sehr gut, dieser Abschnitt der Readme ist allerdings für die Zukunft eher als Liste gedacht. 
-* **Vertrauen:**
+* Vertrauen: Trust in Automation Scale (TiA) nach [Körber 2018][1] in X Items
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)

@@ -48,4 +48,6 @@ a Questionnaire to Measure Trust in Automation. In: Proceedings of the
 Springer, Cham.
 
 > Gefällt mir sehr gut, dieser Abschnitt der Readme ist allerdings für
-> die Zukunft eher als Liste gedacht. \* **Vertrauen:**
+> die Zukunft eher als Liste gedacht. \* Vertrauen: Trust in Automation
+> Scale (TiA) nach \[Körber 2018\]\[1\] in X Items \[1\]:
+> <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles)
