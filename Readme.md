@@ -27,7 +27,13 @@ alt="Faktorenraum" />
 <figcaption aria-hidden="true">Faktorenraum</figcaption>
 </figure>
 
-> Test
+> Auch hier gefällt mir der Faktorenraum sehr gut mit ein bisschen Luft
+> nach oben. Ich persönlich würde die Literaturangabe aus dem Bild
+> entfernen, ansonsten sieht es ein bisschen komisch aus, dass zu den
+> zahlreichen Faktoren nur eine Quelle angegeben ist. Bei den
+> Nutzerfaktoren und den Technikfaktoren sind ein paar dabei, die
+> ebenfalls nach abhängiger Variable klingen. Bitte überlegen Sie
+> nochmal, wann was abgefragt werden soll.
 
 # Operationalisierung
 
@@ -40,3 +46,6 @@ Quelle: Körber, M. (2018). Theoretical Considerations and Development of
 a Questionnaire to Measure Trust in Automation. In: Proceedings of the
 20th Congress of the International Ergonomics Association (IEA 2018),
 Springer, Cham.
+
+> Gefällt mir sehr gut, dieser Abschnitt der Readme ist allerdings für
+> die Zukunft eher als Liste gedacht. \* **Vertrauen:**
