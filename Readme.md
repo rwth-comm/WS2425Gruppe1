@@ -61,9 +61,9 @@ Springer, Cham.
 
 *Einfache Zusammenhangshypothese*
 
-*H1* Es gibt einen Zusammenhang zwischen dem Alter und der
-Nutzungsintention von Bürger\*innen bei verschiedenen KI-gestützten
-Diensten in der Kommunalverwaltung. (ungerichtet; Spearman-Korrelation)
+*H1* Es gibt einen Zusammenhang zwischen dem Alter und dem Vertrauen von
+Bürger\*innen in verschiedene KI-gestützte Dienste in der
+Kommunalverwaltung. (ungerichtet; Spearman-Korrelation)
 
 *H2* Es gibt einen positiven Zusammenhang zwischen der Zuverlässigkeit
 von KI-Anwendungen und der Nutzungsintention von Bürger\*innen bei
@@ -76,19 +76,18 @@ Diensten in der Kommunalverwaltung. (gerichtet; Spearman-Korrelation?)
 
 *Komplexe Zusammenhangshypothese*
 
-*H4* Technikaffinität, Vertrauen in Technologie und Technisches Wissen
+*H4* Technikaffinität, Offenheit gegenüber Neuem und Technisches Wissen
 haben einen Einfluss auf die Nutzungsintention von Bürger\*innen bei
 verschiedenen KI-gestützten Diensten in der Kommunalverwaltung.
 (Multiple lineare Regression)
 
 *Einfache Unterschiedshypothese*
 
-*H5* Personen, die in urbanen Regionen leben, haben eine höhere
-Nutzungsintention bei verschiedenen KI-gestützten Diensten in der
-Kommunalverwaltung als Personen, die in ländlichen Regionen leben.
-(Unverbundener T-Test)
+*H5* Personen, die in urbanen Regionen leben, haben ein größeres
+Vertrauen in verschiedene KI-gestützte Dienste in der Kommunalverwaltung
+als Personen, die in ländlichen Regionen leben. (Unverbundener T-Test)
 
-*H6* Personen mit einer großen TechnikaEinität haben eine höhere
+*H6* Personen mit einer großen Technikaffinität haben eine höhere
 Nutzungsintention bei verschiedenen KI-gestützten Diensten in der
 Kommunalverwaltung als Personen mit einer geringen TechnikaEinität.
 (Unverbundener T-Test)
