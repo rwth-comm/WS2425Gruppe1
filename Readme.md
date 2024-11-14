@@ -68,15 +68,16 @@ Kommunalverwaltung. (ungerichtet; Spearman-Korrelation)
 *H2* Es gibt einen positiven Zusammenhang zwischen der Zuverlässigkeit
 von KI-Anwendungen und der Nutzungsintention von Bürger\*innen bei
 verschiedenen KI-gestützten Diensten in der Kommunalverwaltung.
-(gerichtet; Spearman-Korrelation?)
+(gerichtet; Spearman-Korrelation? könnte auch Pearson sein?)
 
 *H3* Es gibt einen negativen Zusammenhang zwischen dem Bildungsstand und
 der Nutzungsintention von Bürger\*innen bei verschiedenen KI-gestützten
-Diensten in der Kommunalverwaltung. (gerichtet; Spearman-Korrelation?)
+Diensten in der Kommunalverwaltung. (gerichtet; Spearman-Korrelation?
+könnte auch Pearson sein?)
 
 *Komplexe Zusammenhangshypothese*
 
-*H4* Technikaffinität, Offenheit gegenüber Neuem und Technisches Wissen
+*H4* Technikaffinität, Offenheit gegenüber Neuem und technisches Wissen
 haben einen Einfluss auf die Nutzungsintention von Bürger\*innen bei
 verschiedenen KI-gestützten Diensten in der Kommunalverwaltung.
 (Multiple lineare Regression)
@@ -89,7 +90,7 @@ als Personen, die in ländlichen Regionen leben. (Unverbundener T-Test)
 
 *H6* Personen mit einer großen Technikaffinität haben eine höhere
 Nutzungsintention bei verschiedenen KI-gestützten Diensten in der
-Kommunalverwaltung als Personen mit einer geringen TechnikaEinität.
+Kommunalverwaltung als Personen mit einer geringen Technikaffinität.
 (Unverbundener T-Test)
 
 *H7* Die Nutzungsintention von Bürger\*innen bei verschiedenen
@@ -102,4 +103,4 @@ sollen. (Szenario A vs. Szenario C); \[Within-subject-design
 
 *H8* Die Fehleranfälligkeit von KI-Anwendungen hat einen Einfluss auf
 die Nutzungsintention und das Vertrauen von Bürger\*innen in
-verschiedene KI-gestützte Dienste in der Kommunalverwaltung. (MANOVA?)
+verschiedene KI-gestützten Diensten in der Kommunalverwaltung. (MANOVA?)
