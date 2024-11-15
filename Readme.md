@@ -57,6 +57,7 @@ alt="Faktorenraum" />
 > -   Offenheit: ICT Self-Concept Scale (ICT-SC25) nach [Schauffel,
 >     Schmidt, Peiffer, & Ellwart
 >     (2021](https://doi.org/10.6102/zis308_exz "Schauffel, N., Schmidt, I., Peiffer, H., & Ellwart, T.(2021)")
+>     in 25 Items.
 
 # Hypothesen
 
