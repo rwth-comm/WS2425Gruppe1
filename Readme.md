@@ -63,17 +63,18 @@ Springer, Cham.
 
 *H1* Es gibt einen Zusammenhang zwischen dem Alter und dem Vertrauen von
 Bürger\*innen in verschiedene KI-gestützte Dienste in der
-Kommunalverwaltung. (ungerichtet; Spearman-Korrelation)
+Kommunalverwaltung. (ungerichtet; Spearman-Korrelation oder
+Kendall-Tau-Korrelation)
 
 *H2* Es gibt einen positiven Zusammenhang zwischen der Zuverlässigkeit
 von KI-Anwendungen und der Nutzungsintention von Bürger\*innen bei
 verschiedenen KI-gestützten Diensten in der Kommunalverwaltung.
-(gerichtet; Spearman-Korrelation? könnte auch Pearson sein?)
+(gerichtet; Pearson-Korrelation)
 
 *H3* Es gibt einen negativen Zusammenhang zwischen dem Bildungsstand und
 der Nutzungsintention von Bürger\*innen bei verschiedenen KI-gestützten
-Diensten in der Kommunalverwaltung. (gerichtet; Spearman-Korrelation?
-könnte auch Pearson sein?)
+Diensten in der Kommunalverwaltung. (gerichtet; Spearman-Korrelation
+oder Kendall-Tau-Korellation)
 
 *Komplexe Zusammenhangshypothese*
 
