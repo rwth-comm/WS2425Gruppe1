@@ -40,24 +40,21 @@ alt="Faktorenraum" />
 
 # Operationalisierung
 
-> Gefällt mir sehr gut, dieser Abschnitt der Readme ist allerdings für
-> die Zukunft eher als Liste gedacht, z.B.:
->
-> -   Vertrauen: Trust in Automation Scale (TiA) nach [Körber
->     (2018)](https://link.springer.com/chapter/10.1007/978-3-319-96074-6_2 "Körber, M.(2018. Theoretical Considerations and Development of a Questionnaire to Measure Trust in Automation. In: Proceedings of the 20th Congress of the International Ergonomics Association (IEA 2018), Springer, Cham.")
->     in 19 Items.
-> -   Technikaffinität: Kurzskala Technikbereitschaft (TB) nach [Neyer,
->     Felber, Gehbardt
->     (2016)](https://doi.org/10.6102/zis244 "Neyer, F. J., Felber, J., & Gebhardt, C.(2016)")
->     in 12 Items.
-> -   Zuverlässigkeit: Human-Computer-Trust (HCT) nach [Gulati, Sousa,
->     Lamas
->     (2019)](https://doi.org/10.1080/0144929X.2019.1656779 "Gulati, S., Sousa, S., Lamas, D.(2019)")
->     in 30 Items.
-> -   Offenheit: ICT Self-Concept Scale (ICT-SC25) nach [Schauffel,
->     Schmidt, Peiffer, & Ellwart
->     (2021](https://doi.org/10.6102/zis308_exz "Schauffel, N., Schmidt, I., Peiffer, H., & Ellwart, T.(2021)")
->     in 25 Items.
+-   Vertrauen: Trust in Automation Scale (TiA) nach [Körber
+    (2018)](https://link.springer.com/chapter/10.1007/978-3-319-96074-6_2 "Körber, M.(2018. Theoretical Considerations and Development of a Questionnaire to Measure Trust in Automation. In: Proceedings of the 20th Congress of the International Ergonomics Association (IEA 2018), Springer, Cham.")
+    in 19 Items.
+-   Technikaffinität: Kurzskala Technikbereitschaft (TB) nach [Neyer,
+    Felber, Gehbardt
+    (2016)](https://doi.org/10.6102/zis244 "Neyer, F. J., Felber, J., & Gebhardt, C.(2016)")
+    in 12 Items.
+-   Zuverlässigkeit: Human-Computer-Trust (HCT) nach [Gulati, Sousa,
+    Lamas
+    (2019)](https://doi.org/10.1080/0144929X.2019.1656779 "Gulati, S., Sousa, S., Lamas, D.(2019)")
+    in 30 Items.
+-   Offenheit: ICT Self-Concept Scale (ICT-SC25) nach [Schauffel,
+    Schmidt, Peiffer, & Ellwart
+    (2021](https://doi.org/10.6102/zis308_exz "Schauffel, N., Schmidt, I., Peiffer, H., & Ellwart, T.(2021)")
+    in 25 Items.
 
 # Hypothesen
 

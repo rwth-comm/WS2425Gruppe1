@@ -21,8 +21,7 @@ date: "2024-10-24"
 > Auch hier gefällt mir der Faktorenraum sehr gut mit ein bisschen Luft nach oben. Ich persönlich würde die Literaturangabe aus dem Bild entfernen, ansonsten sieht es ein bisschen komisch aus, dass zu den zahlreichen Faktoren nur eine Quelle angegeben ist. Bei den Nutzerfaktoren und den Technikfaktoren sind ein paar dabei, die ebenfalls nach abhängiger Variable klingen. Bitte überlegen Sie nochmal, wann was abgefragt werden soll. Als letzten Kritikpunkt finde ich ein paar Faktoren nicht sehr "sprechend", z.B. Digitalisierungsgrad (von was? Der eigenen Demografie?) und Vorerfahrung.
 
 # Operationalisierung
-> Gefällt mir sehr gut, dieser Abschnitt der Readme ist allerdings für die Zukunft eher als Liste gedacht, z.B.: 
->
+
 * Vertrauen: Trust in Automation Scale (TiA) nach [Körber (2018)](https://link.springer.com/chapter/10.1007/978-3-319-96074-6_2 "Körber, M.(2018. Theoretical Considerations and Development of a Questionnaire to Measure Trust in Automation. In: Proceedings of the 20th Congress of the International Ergonomics Association (IEA 2018), Springer, Cham.") in 19 Items.
 * Technikaffinität: Kurzskala Technikbereitschaft (TB) nach [Neyer, Felber, Gehbardt (2016)](https://doi.org/10.6102/zis244 "Neyer, F. J., Felber, J., & Gebhardt, C.(2016)") in 12 Items.
 * Zuverlässigkeit: Human-Computer-Trust (HCT) nach [Gulati, Sousa, Lamas (2019)](https://doi.org/10.1080/0144929X.2019.1656779 "Gulati, S., Sousa, S., Lamas, D.(2019)") in 30 Items. 
