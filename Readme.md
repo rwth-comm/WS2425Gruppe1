@@ -11,14 +11,6 @@
     das Vertrauen von Bürger\*innen bei verschiedenen KI-gestützten
     Diensten in der Kommunalverwaltung?
 
-> Feedback JRH: Die Forschungsfrage passt handwerklich sehr gut, im
-> Zusammenspiel mit dem Faktorenraum gibt es aber noch ein bisschen
-> Potential. Sie lernen das erst im 3. Semester, aber Akzeptanz wird in
-> allen gängigen Technikakzeptanzmodellen als Nutzungsintention
-> operationalisiert. Trust in Automation (TIA) ist eine super
-> recherchierte Skala, ist allerdings per Definition eine abhängige
-> Variable und sollte daher nach dem Szenario gemessen werden.
-
 # Faktorenraum
 
 <figure>
@@ -26,17 +18,6 @@
 alt="Faktorenraum" />
 <figcaption aria-hidden="true">Faktorenraum</figcaption>
 </figure>
-
-> Auch hier gefällt mir der Faktorenraum sehr gut mit ein bisschen Luft
-> nach oben. Ich persönlich würde die Literaturangabe aus dem Bild
-> entfernen, ansonsten sieht es ein bisschen komisch aus, dass zu den
-> zahlreichen Faktoren nur eine Quelle angegeben ist. Bei den
-> Nutzerfaktoren und den Technikfaktoren sind ein paar dabei, die
-> ebenfalls nach abhängiger Variable klingen. Bitte überlegen Sie
-> nochmal, wann was abgefragt werden soll. Als letzten Kritikpunkt finde
-> ich ein paar Faktoren nicht sehr “sprechend”, z.B.
-> Digitalisierungsgrad (von was? Der eigenen Demografie?) und
-> Vorerfahrung.
 
 # Operationalisierung
 
