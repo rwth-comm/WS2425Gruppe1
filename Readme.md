@@ -104,4 +104,5 @@ sollen. (Szenario A vs. Szenario C); \[Within-subject-design
 
 *H8* Die Fehleranfälligkeit von KI-Anwendungen hat einen Einfluss auf
 die Nutzungsintention und das Vertrauen von Bürger\*innen in
-verschiedene KI-gestützten Diensten in der Kommunalverwaltung. (MANOVA?)
+verschiedene KI-gestützten Diensten in der Kommunalverwaltung.
+(Einfaktorielle MANOVA)

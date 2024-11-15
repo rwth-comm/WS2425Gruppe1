@@ -53,6 +53,6 @@ Quelle: Körber, M. (2018). Theoretical Considerations and Development of a Ques
 
 *Komplexe Unterschiedshypothese*
 
-*H8* Die Fehleranfälligkeit von KI-Anwendungen hat einen Einfluss auf die Nutzungsintention und das Vertrauen von Bürger*innen in verschiedene KI-gestützten Diensten in der Kommunalverwaltung. (MANOVA?)
+*H8* Die Fehleranfälligkeit von KI-Anwendungen hat einen Einfluss auf die Nutzungsintention und das Vertrauen von Bürger*innen in verschiedene KI-gestützten Diensten in der Kommunalverwaltung. (Einfaktorielle MANOVA)
 
 
