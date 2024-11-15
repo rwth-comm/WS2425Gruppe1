@@ -37,7 +37,7 @@ Quelle: Körber, M. (2018). Theoretical Considerations and Development of a Ques
 
 *H2* Es gibt einen positiven Zusammenhang zwischen der Zuverlässigkeit von KI-Anwendungen und der Nutzungsintention von Bürger*innen bei verschiedenen KI-gestützten Diensten in der Kommunalverwaltung. (gerichtet; Spearman-Korrelation? könnte auch Pearson sein?)
 
-*H3* Es gibt einen negativen Zusammenhang zwischen dem Bildungsstand und der Nutzungsintention von Bürger*innen bei verschiedenen KI-gestützten Diensten in der Kommunalverwaltung. (gerichtet; Spearman-Korrelation? könnte auch Pearson sein?)
+*H3* Es gibt einen negativen Zusammenhang zwischen dem Bildungsstand und der Nutzungsintention von Bürger*innen bei verschiedenen KI-gestützten Diensten in der Kommunalverwaltung. (gerichtet; Spearman-Korrelation)
 
 *Komplexe Zusammenhangshypothese*
 
