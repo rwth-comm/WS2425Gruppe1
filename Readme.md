@@ -62,47 +62,44 @@ Springer, Cham.
 *Einfache Zusammenhangshypothese*
 
 *H1* Es gibt einen Zusammenhang zwischen dem Alter und dem Vertrauen von
-Bürger\*innen in verschiedene KI-gestützte Dienste in der
-Kommunalverwaltung. (ungerichtet; Spearman-Korrelation oder
-Kendall-Tau-Korrelation)
+Bürger\*innen in KI-gestützte Dienste in der Kommunalverwaltung.
+(ungerichtet; Pearson-Korrelation)
 
 *H2* Es gibt einen positiven Zusammenhang zwischen der Zuverlässigkeit
 von KI-Anwendungen und der Nutzungsintention von Bürger\*innen bei
-verschiedenen KI-gestützten Diensten in der Kommunalverwaltung.
-(gerichtet; Pearson-Korrelation)
+KI-gestützten Diensten in der Kommunalverwaltung. (gerichtet;
+Pearson-Korrelation)
 
 *H3* Es gibt einen negativen Zusammenhang zwischen dem Bildungsstand und
-der Nutzungsintention von Bürger\*innen bei verschiedenen KI-gestützten
-Diensten in der Kommunalverwaltung. (gerichtet; Spearman-Korrelation
-oder Kendall-Tau-Korellation)
+der Nutzungsintention von Bürger\*innen bei KI-gestützten Diensten in
+der Kommunalverwaltung. (gerichtet; Spearman-Korrelation oder
+Kendall-Tau-Korellation)
 
 *Komplexe Zusammenhangshypothese*
 
 *H4* Technikaffinität, Offenheit gegenüber Neuem und technisches Wissen
 haben einen Einfluss auf die Nutzungsintention von Bürger\*innen bei
-verschiedenen KI-gestützten Diensten in der Kommunalverwaltung.
-(Multiple lineare Regression)
+KI-gestützten Diensten in der Kommunalverwaltung. (Multiple lineare
+Regression)
 
 *Einfache Unterschiedshypothese*
 
 *H5* Personen, die in urbanen Regionen leben, haben ein größeres
-Vertrauen in verschiedene KI-gestützte Dienste in der Kommunalverwaltung
-als Personen, die in ländlichen Regionen leben. (Unverbundener T-Test)
+Vertrauen in KI-gestützte Dienste in der Kommunalverwaltung als
+Personen, die in ländlichen Regionen leben. (Unverbundener T-Test)
 
 *H6* Personen mit einer großen Technikaffinität haben eine höhere
-Nutzungsintention bei verschiedenen KI-gestützten Diensten in der
-Kommunalverwaltung als Personen mit einer geringen Technikaffinität.
-(Unverbundener T-Test)
+Nutzungsintention bei KI-gestützten Diensten in der Kommunalverwaltung
+als Personen mit einer geringen Technikaffinität. (Unverbundener T-Test)
 
-*H7* Die Nutzungsintention von Bürger\*innen bei verschiedenen
-KI-gestützten Diensten in der Kommunalverwaltung unterscheidet sich
-zwischen den unterschiedlichen KI-Chatbots, die zum Einsatz kommen
-sollen. (Szenario A vs. Szenario C); \[Within-subject-design
+*H7* Die Nutzungsintention von Bürger\*innen bei KI-gestützten Diensten
+in der Kommunalverwaltung unterscheidet sich zwischen dem KI-Chatbot in
+Szenario A und C, der zum Einsatz kommen soll. \[Within-subject-design
 (Verbundener T- Test)\]
 
 *Komplexe Unterschiedshypothese*
 
-*H8* Die Fehleranfälligkeit von KI-Anwendungen hat einen Einfluss auf
-die Nutzungsintention und das Vertrauen von Bürger\*innen in
-verschiedene KI-gestützten Diensten in der Kommunalverwaltung.
-(Einfaktorielle MANOVA)
+*H8* Die Fehleranfälligkeit von KI-Anwendungen (hoch/niedrig) hat einen
+Einfluss auf die Nutzungsintention und das Vertrauen von Bürger\*innen
+in KI-gestützten Diensten in der Kommunalverwaltung. (Einfaktorielle
+MANOVA)
