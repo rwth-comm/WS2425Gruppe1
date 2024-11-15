@@ -94,8 +94,7 @@ als Personen mit einer geringen Technikaffinität. (Unverbundener T-Test)
 
 *H7* Die Nutzungsintention von Bürger\*innen bei KI-gestützten Diensten
 in der Kommunalverwaltung unterscheidet sich zwischen dem KI-Chatbot in
-Szenario A und C, der zum Einsatz kommen soll. \[Within-subject-design
-(Verbundener T- Test)\]
+Szenario A und C. \[Within-subject-design (Verbundener T- Test)\]
 
 *Komplexe Unterschiedshypothese*
 
