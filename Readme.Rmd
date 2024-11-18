@@ -67,5 +67,5 @@ date: "2024-10-24"
 
 *H8* Die Fehleranfälligkeit von einer KI-Anwendung (hoch/niedrig) hat einen Einfluss auf die Nutzungsintention und das Vertrauen von Bürger*innen in einen KI-gestützten Dienst für Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA, Herabsenkung der Skala, medialer Split)
 
-> Die Fehleranfällgikeit der Anwendung kann man in einem Fragebogen nicht erheben. Ich bin mir nicht sicher, was mit dem Faktor gemeint ist. Hier gibt es aber sehr viele andere spannende Ideen. Wir können gern im Seminar nochmal darüber sprechen. 
+> Die Fehleranfällgikeit der Anwendung kann man in einem Fragebogen nicht erheben. Ich bin mir nicht sicher, was mit dem Faktor gemeint ist. Hier gibt es aber sehr viele andere spannende Ideen. Wir können gern im Seminar nochmal darüber sprechen. Und Achtung, das Verfahren heißt Mediansplit ;-) Wir splitten die die Variable an ihrem Median in zwei Hälften. 
 

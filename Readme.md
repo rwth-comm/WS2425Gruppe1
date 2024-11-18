@@ -125,4 +125,6 @@ medialer Split)
 > Die Fehleranfällgikeit der Anwendung kann man in einem Fragebogen
 > nicht erheben. Ich bin mir nicht sicher, was mit dem Faktor gemeint
 > ist. Hier gibt es aber sehr viele andere spannende Ideen. Wir können
-> gern im Seminar nochmal darüber sprechen.
+> gern im Seminar nochmal darüber sprechen. Und Achtung, das Verfahren
+> heißt Mediansplit ;-) Wir splitten die die Variable an ihrem Median in
+> zwei Hälften.
