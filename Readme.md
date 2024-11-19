@@ -55,28 +55,32 @@ alt="Faktorenraum" />
 
 *H1* Es gibt einen Zusammenhang zwischen dem Alter und dem Vertrauen von
 Bürger\*innen in einen KI-gestützten Dienst für Gebührenbescheide in der
-Kommunalverwaltung. (ungerichtet; Pearson-Korrelation)
-
-> Super! Handwerklich perfekt. Eventuell kann man die Formulierung noch
-> etwas kürzen: Es gibt einen Zusammenhang zwischen Alter und dem
-> Vertrauen in KI-erstellte Gebührenbescheide. Haben Sie hier eine
-> Vermutung über die Richtung?
+Kommunalverwaltung. (ungerichtet; Pearson-Korrelation) \#H1: Es gibt
+einen Zusammenhang zwischen Alter und Vertrauen in KI-erstellte
+Gebührenbescheide. (ungerichtet; Pearson-Korrelation) &gt; Super!
+Handwerklich perfekt. Eventuell kann man die Formulierung noch etwas
+kürzen: Es gibt einen Zusammenhang zwischen Alter und dem Vertrauen in
+KI-erstellte Gebührenbescheide. Haben Sie hier eine Vermutung über die
+Richtung?
 
 *H2* Es gibt einen positiven Zusammenhang zwischen der Zuverlässigkeit
 von KI-Anwendungen und der Nutzungsintention von Bürger\*innen bei einem
 Chatbot für Rückfragen in der Kommunalverwaltung. (gerichtet;
-Pearson-Korrelation)
-
-> Vorsicht, Zuverlässigkeit von KI-Anwendungen messen Sie nicht. Sie
-> messen ggf. Vertrauen in Technik. Ich hätte eine Skala zur Einstellung
-> gegenüber KI für Sie. Googlen Sie mal GAAIS.
+Pearson-Korrelation) \#H2: Es gibt einen positiven Zusammenhang zwischen
+dem Mensch-Technik-Vertrauen und der Nutzungsintention bei einem Chatbot
+für Rückfragen in der Kommunalverwaltung. (gerichtet;
+Pearson-Korrelation) &gt; Vorsicht, Zuverlässigkeit von KI-Anwendungen
+messen Sie nicht. Sie messen ggf. Vertrauen in Technik. Ich hätte eine
+Skala zur Einstellung gegenüber KI für Sie. Googlen Sie mal GAAIS.
 
 *H3* Es gibt einen negativen Zusammenhang zwischen dem Bildungsstand und
 der Nutzungsintention von Bürger\*innen bei einem Chatbot für
 Formularausfüllung in der Kommunalverwaltung. (gerichtet;
-Spearman-Korrelation oder Kendall-Tau-Korellation)
-
-> siehe Regression.
+Spearman-Korrelation oder Kendall-Tau-Korellation) \#Der Bildungsstand
+hat einen signifikanten Einfluss auf die Nutzungsintention bei einem
+Chatbot für Formularausfüllung, wobei ein höherer Bildungsstand mit
+einer geringeren Nutzungsintention assoziiert ist.(Regression?) &gt;
+siehe Regression.
 
 *Komplexe Zusammenhangshypothese*
 
@@ -90,6 +94,9 @@ Kommunalverwaltung. (Multiple lineare Regression)
 > Technikaffinität. Ein bisschen müssen wir hier aufpassen wegen
 > p-hacking, aber das besprechen wir später noch.
 
+\#Technikaffinität, Offenheit und Bildungsstand haben einen Einfluss auf
+die Nutzungsintention bei KI-erstellten Gebührenbescheiden.
+
 *Einfache Unterschiedshypothese*
 
 *H5* Personen, die in urbanen Regionen leben, haben ein größeres
@@ -101,7 +108,10 @@ als Personen, die in ländlichen Regionen leben. (Unverbundener T-Test)
 *H6* Personen mit einer großen Technikaffinität haben eine höhere
 Nutzungsintention bei einem Chatbot für Formularausfüllung in der
 Kommunalverwaltung als Personen mit einer geringen Technikaffinität.
-(Unverbundener T-Test)
+(Unverbundener T-Test) \#Es gibt einen positiven Zusammenhang zwischen
+Technikaffinität und der Nutzungsintention bei einem Chatbot für
+Formularausfüllung in der Kommunalverwaltung. (gerichtet;
+Pearson-Korrelation)
 
 > Ja, aber hier wäre die Korrelation besser, weil wir hier die Streung
 > in Technikaffinität unnötig zerstören.
@@ -128,3 +138,16 @@ medialer Split)
 > gern im Seminar nochmal darüber sprechen. Und Achtung, das Verfahren
 > heißt Mediansplit ;-) Wir splitten die die Variable an ihrem Median in
 > zwei Hälften.
+
+# *GAAIS*
+
+\#Schepman, A., & Rodway, P. (2022). The General Attitudes towards
+Artificial Intelligence Scale (GAAIS): Confirmatory Validation and
+Associations with Personality, Corporate Distrust, and General Trust.
+International Journal of Human–Computer Interaction, 39(13), 2724–2741.
+<https://doi.org/10.1080/10447318.2022.2085400>
+
+\#GAAIS misst Einstellungen zu KI und umfasst zwei Dimensionen: 1)
+Positive Einstellungen: Bewertung des gesellschaftlichen und
+persönlichen Nutzens von KI. 2) Negative Einstellungen: Sorgen, in Bezug
+auf ethische Fragen und Risiken.
