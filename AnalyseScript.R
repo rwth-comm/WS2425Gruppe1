@@ -5,7 +5,7 @@ library(tidyverse)
 library(psych)
 
 raw <- read_csv("data/datacleaning_Beispieldaten.csv")
-<<<<<<< HEAD
+
 raw <- raw[c(-1,-2),]
 
 raw <- filter(raw, Progress == 100)
@@ -22,5 +22,4 @@ names(raw.short) <- c("Duration", "ResponseId", "Age", "Gender", "Edu", "JobType
                       "wrfq_1", "wrfq_2", "wrfq_3", "wrfq_4", "wrfq_5", 
                       "wrfq_6", "wrfq_7", "wrfq_8", "wrfq_9", 
                       "svi_1n", "svi_2n", "svi_3", "svi_4n", "svi_5")
-=======
->>>>>>> ddc46dc8fd339307268eb7f6a42b586af0d822bb
+
