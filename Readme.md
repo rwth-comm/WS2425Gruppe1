@@ -61,23 +61,11 @@ Technik zu vertrauen und der Einstellung von Bürger\*innen gegenüber
 einem Chatbot für Rückfragen in der Kommunalverwaltung. (gerichtet;
 Pearson-Korrelation)
 
-<<<<<<< HEAD
 *H3* Es gibt einen negativen Zusammenhang zwischen dem Alter und der
 Nutzungsintention von Bürger\*innen bei einem Chatbot für
 Formularausfüllung in der Kommunalverwaltung. (gerichtet;
 Spearman-Korrelation oder Kendall-Tau-Korellation)
 
-=======
-> Vorsicht, Zuverlässigkeit von KI-Anwendungen messen Sie nicht. Sie
-> messen ggf. Vertrauen in Technik. Ich hätte eine Skala zur Einstellung
-> gegenüber KI für Sie. Googlen Sie mal GAAIS.
-
-*H3* Es gibt einen negativen Zusammenhang zwischen dem Alter und der
-Nutzungsintention von Bürger\*innen bei einem Chatbot für
-Formularausfüllung in der Kommunalverwaltung. (gerichtet;
-Spearman-Korrelation oder Kendall-Tau-Korellation)
-
->>>>>>> 9eedfafeb96b630ab5bff20cac7d32e73a35daf2
 *Komplexe Zusammenhangshypothese*
 
 *H4* Der Bildungsstand, Offenheit und Technikaffinität haben einen
