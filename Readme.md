@@ -53,49 +53,29 @@ alt="Faktorenraum" />
 
 *Einfache Zusammenhangshypothese*
 
-*H1* Es gibt einen Zusammenhang zwischen dem Alter und dem Vertrauen von
-Bürger\*innen in einen KI-gestützten Dienst für Gebührenbescheide in der
-Kommunalverwaltung. (ungerichtet; Pearson-Korrelation) \#H1: Es gibt
-einen Zusammenhang zwischen Alter und Vertrauen in KI-erstellte
-Gebührenbescheide. (ungerichtet; Pearson-Korrelation) &gt; Super!
-Handwerklich perfekt. Eventuell kann man die Formulierung noch etwas
-kürzen: Es gibt einen Zusammenhang zwischen Alter und dem Vertrauen in
-KI-erstellte Gebührenbescheide. Haben Sie hier eine Vermutung über die
-Richtung?
+*H1* Es gibt einen Zusammenhang zwischen Alter und dem Vertrauen in
+KI-erstellte Gebührenbescheide.
 
-*H2* Es gibt einen positiven Zusammenhang zwischen der Zuverlässigkeit
-von KI-Anwendungen und der Nutzungsintention von Bürger\*innen bei einem
-Chatbot für Rückfragen in der Kommunalverwaltung. (gerichtet;
-Pearson-Korrelation) \#H2: Es gibt einen positiven Zusammenhang zwischen
-dem Mensch-Technik-Vertrauen und der Nutzungsintention bei einem Chatbot
-für Rückfragen in der Kommunalverwaltung. (gerichtet;
-Pearson-Korrelation) &gt; Vorsicht, Zuverlässigkeit von KI-Anwendungen
-messen Sie nicht. Sie messen ggf. Vertrauen in Technik. Ich hätte eine
-Skala zur Einstellung gegenüber KI für Sie. Googlen Sie mal GAAIS.
+*H2* Es gibt einen positiven Zusammenhang zwischen der Neigung, in
+Technik zu vertrauen und der Einstellung von Bürger\*innen gegenüber
+einem Chatbot für Rückfragen in der Kommunalverwaltung. (gerichtet;
+Pearson-Korrelation)
 
-*H3* Es gibt einen negativen Zusammenhang zwischen dem Bildungsstand und
-der Nutzungsintention von Bürger\*innen bei einem Chatbot für
+> Vorsicht, Zuverlässigkeit von KI-Anwendungen messen Sie nicht. Sie
+> messen ggf. Vertrauen in Technik. Ich hätte eine Skala zur Einstellung
+> gegenüber KI für Sie. Googlen Sie mal GAAIS.
+
+*H3* Es gibt einen negativen Zusammenhang zwischen dem Alter und der
+Nutzungsintention von Bürger\*innen bei einem Chatbot für
 Formularausfüllung in der Kommunalverwaltung. (gerichtet;
-Spearman-Korrelation oder Kendall-Tau-Korellation) \#Der Bildungsstand
-hat einen signifikanten Einfluss auf die Nutzungsintention bei einem
-Chatbot für Formularausfüllung, wobei ein höherer Bildungsstand mit
-einer geringeren Nutzungsintention assoziiert ist.(Regression?) &gt;
-siehe Regression.
+Spearman-Korrelation oder Kendall-Tau-Korellation)
 
 *Komplexe Zusammenhangshypothese*
 
-*H4* Technikaffinität, Offenheit gegenüber Neuem und technisches Wissen
-haben einen Einfluss auf die Nutzungsintention von Bürger\*innen bei
-einem KI-gestützten Dienst für Gebührenbescheide in der
-Kommunalverwaltung. (Multiple lineare Regression)
-
-> Diese drei Technikaffinitäten können wir leider nicht alle erheben.
-> Spannend wäre aber Bildung, Offenheit (Persönlichkeit) und
-> Technikaffinität. Ein bisschen müssen wir hier aufpassen wegen
-> p-hacking, aber das besprechen wir später noch.
-
-\#Technikaffinität, Offenheit und Bildungsstand haben einen Einfluss auf
-die Nutzungsintention bei KI-erstellten Gebührenbescheiden.
+*H4* Der Bildungsstand, Offenheit und Technikaffinität haben einen
+Einfluss auf die Nutzungsintention von Bürger\*innen bei einem
+KI-gestützten Dienst für Gebührenbescheide in der Kommunalverwaltung.
+(Multiple lineare Regression)
 
 *Einfache Unterschiedshypothese*
 
@@ -103,18 +83,10 @@ die Nutzungsintention bei KI-erstellten Gebührenbescheiden.
 Vertrauen in bei einem Chatbot für Rückfragen in der Kommunalverwaltung
 als Personen, die in ländlichen Regionen leben. (Unverbundener T-Test)
 
-> Super!
-
-*H6* Personen mit einer großen Technikaffinität haben eine höhere
-Nutzungsintention bei einem Chatbot für Formularausfüllung in der
-Kommunalverwaltung als Personen mit einer geringen Technikaffinität.
-(Unverbundener T-Test) \#Es gibt einen positiven Zusammenhang zwischen
-Technikaffinität und der Nutzungsintention bei einem Chatbot für
-Formularausfüllung in der Kommunalverwaltung. (gerichtet;
-Pearson-Korrelation)
-
-> Ja, aber hier wäre die Korrelation besser, weil wir hier die Streung
-> in Technikaffinität unnötig zerstören.
+*H6* Personen mit einer höheren Neigung, Technik zu vertrauen haben eine
+höhere Nutzungsintention bei einem Chatbot für Formularausfüllung in der
+Kommunalverwaltung als Personen mit einer geringen Neigung, Technik zu
+vertrauen. (Unverbundener T-Test)
 
 *H7* Die Nutzungsintention von BürgerInnen bei einem Chatbot für
 Rückfragen in der Kommunalverwaltung unterscheidet sich von der
@@ -122,22 +94,11 @@ Nutzungsintention von BürgerInnen bei einem Chatbot für die
 Formularausfüllung in der Kommunalverwaltung. \[Within-subject-design
 (Verbundener T- Test)\]
 
-> Super! Spannende Idee!
-
 *Komplexe Unterschiedshypothese*
 
-*H8* Die Fehleranfälligkeit von einer KI-Anwendung (hoch/niedrig) hat
-einen Einfluss auf die Nutzungsintention und das Vertrauen von
-Bürger\*innen in einen KI-gestützten Dienst für Gebührenbescheide in der
-Kommunalverwaltung. (Einfaktorielle MANOVA, Herabsenkung der Skala,
-medialer Split)
-
-> Die Fehleranfällgikeit der Anwendung kann man in einem Fragebogen
-> nicht erheben. Ich bin mir nicht sicher, was mit dem Faktor gemeint
-> ist. Hier gibt es aber sehr viele andere spannende Ideen. Wir können
-> gern im Seminar nochmal darüber sprechen. Und Achtung, das Verfahren
-> heißt Mediansplit ;-) Wir splitten die die Variable an ihrem Median in
-> zwei Hälften.
+*H8* Geschlecht hat einen Einfluss auf die Nutzungsintention und das
+Vertrauen von Bürger\*innen in einen KI-gestützten Dienst für
+Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
 
 # *GAAIS*
 
