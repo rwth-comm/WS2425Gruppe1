@@ -21,5 +21,6 @@ names(raw.short) <- c("Duration", "ResponseId", "Age", "Gender", "Edu", "JobType
                       "ati_6n", "ati_7", "ati_8n", "ati_9", 
                       "wrfq_1", "wrfq_2", "wrfq_3", "wrfq_4", "wrfq_5", 
                       "wrfq_6", "wrfq_7", "wrfq_8", "wrfq_9", 
-                      "svi_1n", "svi_2n", "svi_3n", "svi_4n", "svi_5")
+                      "svi_1n", "svi_2n", "svi_3", "svi_4n", "svi_5")
+
 
