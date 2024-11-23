@@ -20,11 +20,10 @@ date: "2024-10-24"
 
 # Operationalisierung
 
-* Vertrauen: Trust in Automation Scale (TiA) nach [Körber (2018)](https://link.springer.com/chapter/10.1007/978-3-319-96074-6_2 "Körber, M.(2018. Theoretical Considerations and Development of a Questionnaire to Measure Trust in Automation. In: Proceedings of the 20th Congress of the International Ergonomics Association (IEA 2018), Springer, Cham.") in 19 Items.
-* Technikaffinität: interaktionsbezogene Technikaffinität (ATI) nach [Franke, Attig, Wessel (2019)] (https://ati-scale.org/assets/scales/ati-scala_german_2022-02-25.pdf "Franke, Attig, Wessel(2019). Fragebogen zur interaktionsbezogenen Technikaffinität (ATI)
-(Affinity for Technology Interaction (ATI) Scale, Deutsche Version)") in 9 Items.
-* Offenheit: Big 5 Inventory (BFI-10) nach [Rammstedt, Kemper, Klein, Beierlein, Kovaleva(2014)](https://doi.org/10.6102/zis76 "Rammstedt, B., Kemper, C.J., Klein, M.C., Beierlein, C., Kovaleva, A.(2014. Big 5 Inventory)) in 10 Items.
-* Handlungsakzeptanz: User Acceptance of Information Technology nach [Venkatesh, Morris, Davis, Davis(2003)](https://www.jstor.org/stable/30036540 Venkatesh, Morris, Davis, Davis(2003). User Acceptance of Information Technology.) in X Items.
+* Vertrauen & Neigung zu Vertrauen: Trust in Automation Scale (TiA) nach [Körber (2018)](https://link.springer.com/chapter/10.1007/978-3-319-96074-6_2 "Körber, M.(2018. Theoretical Considerations and Development of a Questionnaire to Measure Trust in Automation. In: Proceedings of the 20th Congress of the International Ergonomics Association (IEA 2018), Springer, Cham.") in 19 Items.
+* Technikaffinität: interaktionsbezogene Technikaffinität (ATI) nach [Franke, Attig, Wessel (2019)](https://ati-scale.org/assets/scales/ati-scala_german_2022-02-25.pdf "Franke, Attig, Wessel(2019. Fragebogen zur interaktionsbezogenen Technikaffinität (ATI) (Affinity for Technology (ATI)Scale, Deutsche Version))") in 9 Items. 
+* Offenheit: Big 5 Inventory (BFI-10) nach [Rammstedt, Kemper, Klein, Beierlein, Kovaleva(2014)](https://doi.org/10.6102/zis76 "Rammstedt, B., Kemper, C.J., Klein, M.C., Beierlein, C., Kovaleva, A.(2014. Big 5 Inventory)") in 10 Items.
+* Handlungsakzeptanz: User Acceptance of Information Technology nach [Venkatesh, Morris, Davis, Davis(2003)](https://www.jstor.org/stable/30036540 "Venkatesh, Morris, Davis, Davis(2003. User Acceptance of Information Technology.") in X Items.
 
 # Hypothesen
 
