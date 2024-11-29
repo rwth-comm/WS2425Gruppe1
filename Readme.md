@@ -33,10 +33,10 @@ alt="Faktorenraum" />
     Beierlein,
     Kovaleva(2014)](https://doi.org/10.6102/zis76 "Rammstedt, B., Kemper, C.J., Klein, M.C., Beierlein, C., Kovaleva, A.(2014. Big 5 Inventory)")
     in 10 Items.
--   Handlungsakzeptanz: User Acceptance of Information Technology nach
-    [Venkatesh, Morris, Davis,
-    Davis(2003)](https://www.jstor.org/stable/30036540 "Venkatesh, Morris, Davis, Davis(2003. User Acceptance of Information Technology.")
-    in X Items.
+-   Handlungsakzeptanz: Behavioural Attention - User Acceptance of
+    Information Technology nach [Venkatesh, Morris, Davis,
+    Davis(2003)](https://www.jstor.org/stable/30036540 "Venkatesh, Morris, Davis, Davis(2003. User Acceptance of Information Technology")
+    in 3 Items.
 
 # Hypothesen
 
@@ -84,16 +84,3 @@ Formularausfüllung in der Kommunalverwaltung. \[Within-subject-design
 *H8* Geschlecht hat einen Einfluss auf die Nutzungsintention und das
 Vertrauen von Bürger\*innen in einen KI-gestützten Dienst für
 Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
-
-# *GAAIS*
-
-\#Schepman, A., & Rodway, P. (2022). The General Attitudes towards
-Artificial Intelligence Scale (GAAIS): Confirmatory Validation and
-Associations with Personality, Corporate Distrust, and General Trust.
-International Journal of Human–Computer Interaction, 39(13), 2724–2741.
-<https://doi.org/10.1080/10447318.2022.2085400>
-
-\#GAAIS misst Einstellungen zu KI und umfasst zwei Dimensionen: 1)
-Positive Einstellungen: Bewertung des gesellschaftlichen und
-persönlichen Nutzens von KI. 2) Negative Einstellungen: Sorgen, in Bezug
-auf ethische Fragen und Risiken.
