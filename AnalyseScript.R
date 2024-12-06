@@ -49,11 +49,10 @@ schluesselliste <- list(
   TIA_A = c("tia_a_1", "tia_a_2"),
   BIATT_B = c("biatt_b_1", "biatt_b_2", "biatt_b_3", "biatt_b_4", "biatt_b_5", "biatt_b_6"),
   TIA_B = c("tia_b_1", "tia_b_2"),
-  BIATT_C = c("biatt_c_1", "biatt_c_2", "biatt_c_3", "biatt_c_4", "biatt_c_5", "biatt_c_6"),
-  TIA_C = c("tia_c_1", "tia_c_2")
+  BIATT_C = c("biatt_c_1", "biatt_c_2", "biatt_c_3", "biatt_c_4", "biatt_c_5", "biatt_c_6")
 )
 
-scores <- scoreItems(schluesselliste, items = raw.short, min = 1, max = 9)
+scores <- scoreItems(schluesselliste, items = raw.short, min = 1, max = 6)
 
 scores$alpha
 
