@@ -4,63 +4,56 @@ library(psych)
 source("qualtricshelpers.R")
 
 # Daten einlesen ----
-raw <- load_qualtrics_csv("data/datacleaning_Beispieldaten.csv")
+raw <- load_qualtrics_csv("data/Methodenseminar+WS2425_6.+Dezember+2024_13.12.csv")
 
 # Rohdaten filtern ----
 raw %>% 
   filter(Progress == 100) %>% 
-  filter(Status == 4) -> raw
+  filter(Status == 2) %>% 
+  filter(DSGVO == 1) -> raw
 
 # Überflüssige Variablen entfernen ----
-raw.short <- raw[,c(6,9,18:54)]
+raw.short <- raw[,c(6, 19:22, 24:37, 65:70, 76:83, 89:90, 98:103, 112:114)]
 
 # Variablen umbenennen ---- 
-generate_codebook(raw.short, "data/datacleaning_Beispieldaten.csv", "data/codebook.csv")
+generate_codebook(raw.short, "data/Methodenseminar+WS2425_6.+Dezember+2024_13.12.csv", "data/codebook.csv")
 codebook <- read_codebook("data/codebook_final.csv")
 names(raw.short) <- codebook$variable
 
 # Korrekte Datentypen zuordnen ----
 
-raw.short$Age %>% 
-  as.numeric() -> raw.short$Age
-
 raw.short$Gender %>% 
-  recode('1' = "Männlich", '2' = "Weiblich", '3' = "Divers") %>% 
+  recode('1' = "Männlich", '2' = "Weiblich", '3' = "divers, '4' = keine Angabe") %>% 
   as.factor() -> raw.short$Gender
 
-raw.short$Edu %>% 
+raw.short$Bildungsabschluss %>% 
   ordered(levels = c(1:5),
-          labels = c("Haupt- oder Realschulabschluss",
-                     "Fach-/Hochschulreife (Abitur)",
-                     "Ausbildung",
-                     "Hochschulabschluss",
-                     "Promotion")) -> raw.short$Edu
+          labels = c("(noch) kein Schulabschluss", 
+                     "Hauptschulabschluss", 
+                     "Realschulabschluss", 
+                     "Abitur", 
+                     "Hochschulabschluss")) -> raw.short$Bildungsabschluss
   
-raw.short$JobType %>% recode(raw.short$JobType,
-                             '1' = "In Ausbildung / Studium",
-                             '2' = "Arbeitnehmer/-in und Studierende/-p",
-                             '3'= "Arbeitnehmer/-in",
-                             '4' = "Arbeitgeber/-in",
-                             '5' = "Selbstständig ohne Mitarbeiter",
-                             '6' = "Rentner/-in") %>% 
-  as.factor() -> raw.short$JobType
+raw.short$Wohnort %>% 
+  recode('1' = "Ländlich", '2' = "Vorort / Kleinstadt", '3' = "Großstadt") %>% 
+  as.factor() -> raw.short$Wohnort
 
 # Qualitätskontrolle ---- 
 
 # Skalenwerte berechnen ----
 schluesselliste <- list(
-  BF_Extraversion = c("-bf_1n","bf_6"),
-  BF_Agreeableness = c("bf_2","-bf_7n"),
-  BF_Openness = c("-bf_5n", "bf_10"),
-  BF_Neuroticism = c("-bf_4n", "bf_9"),
-  BF_Concientiousness= c("-bf_3n", "bf_8"),
-  ATI = vars4psych(raw.short, "ati"),
-  PRO = c("wrfq_1","wrfq_2","wrfq_3","wrfq_4","wrfq_9"),
-  PRE = c("wrfq_5","wrfq_6","wrfq_7","wrfq_8"),
-  SVI = vars4psych(raw.short, "svi")
+  BF_Offenheit = c("big5_1", "-big5_2n"),
+  Vertrauen = c("-nzv_1n", "nzv_2", "nzv_3"),
+  ATI = c("ati_1", "ati_2", "-ati_3n", "ati_4", "ati_5", "-ati_6n", "ati_7", "-ati_8n", "ati_9"),
+  BIATT_A = c("biatt_a_1", "biatt_a_2", "biatt_a_3", "biatt_a_4", "biatt_a_5", "biatt_a_6"),
+  TIA_A = c("tia_a_1", "tia_a_2"),
+  BIATT_B = c("biatt_b_1", "biatt_b_2", "biatt_b_3", "biatt_b_4", "biatt_b_5", "biatt_b_6"),
+  TIA_B = c("tia_b_1", "tia_b_2"),
+  BIATT_C = c("biatt_c_1", "biatt_c_2", "biatt_c_3", "biatt_c_4", "biatt_c_5", "biatt_c_6"),
+  TIA_C = c("tia_c_1", "tia_c_2")
 )
 
-scores <- scoreItems(schluesselliste, items = raw.short, min = 1, max = 6)
+scores <- scoreItems(schluesselliste, items = raw.short, min = 1, max = 9)
 
 scores$alpha
 
@@ -68,6 +61,9 @@ data <- bind_cols(raw.short, scores$scores)
 
 # Daten exprotieren ---- 
 write_rds(data, "data/data.rds")
+
+
+
 
 install.packages("pwr")
 library(pwr)
