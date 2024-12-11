@@ -25,6 +25,8 @@ ggplot(df) +
        caption = "30 Bins") +
   theme_minimal()
 
+ggsave(filename = "histogramm.png", width = 15, height = 12, units = "cm")
+
 
 library(ggplot2)
 
