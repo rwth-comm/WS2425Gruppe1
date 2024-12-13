@@ -23,7 +23,7 @@ names(raw.short) <- codebook$variable
 # Korrekte Datentypen zuordnen ----
 
 raw.short$Gender %>% 
-  recode('1' = "Männlich", '2' = "Weiblich", '3' = "divers, '4' = keine Angabe") %>% 
+  recode('1' = "Männlich", '2' = "Weiblich", '3' = "divers", '4' = "keine Angabe") %>% 
   as.factor() -> raw.short$Gender
 
 raw.short$Bildungsabschluss %>% 
@@ -45,11 +45,14 @@ schluesselliste <- list(
   BF_Offenheit = c("big5_1", "-big5_2n"),
   Vertrauen = c("-nzv_1n", "nzv_2", "nzv_3"),
   ATI = c("ati_1", "ati_2", "-ati_3n", "ati_4", "ati_5", "-ati_6n", "ati_7", "-ati_8n", "ati_9"),
-  BIATT_A = c("biatt_a_1", "biatt_a_2", "biatt_a_3", "biatt_a_4", "biatt_a_5", "biatt_a_6"),
+  BI_A = c("biatt_a_1", "biatt_a_2", "biatt_a_3"),
+  ATT_A = c("biatt_a_4", "biatt_a_5", "biatt_a_6"),
   TIA_A = c("tia_a_1", "tia_a_2"),
-  BIATT_B = c("biatt_b_1", "biatt_b_2", "biatt_b_3", "biatt_b_4", "biatt_b_5", "biatt_b_6"),
+  BI_B = c("biatt_b_1", "biatt_b_2", "biatt_b_3"),
+  ATT_B = c("biatt_b_4", "biatt_b_5", "biatt_b_6"),
   TIA_B = c("tia_b_1", "tia_b_2"),
-  BIATT_C = c("biatt_c_1", "biatt_c_2", "biatt_c_3", "biatt_c_4", "biatt_c_5", "biatt_c_6")
+  BI_C = c("biatt_c_1", "biatt_c_2", "biatt_c_3"),
+  ATT_C = c("biatt_c_4", "biatt_c_5", "biatt_c_6")
 )
 
 scores <- scoreItems(schluesselliste, items = raw.short, min = 1, max = 6)
