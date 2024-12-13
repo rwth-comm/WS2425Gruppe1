@@ -26,7 +26,7 @@ library(ggplot2)
 
 
 # Faktorenraum
-![Faktorenraum](readme_files/Faktorenraum_Gruppe 1.png)
+![Faktorenraum](Readme_files/Faktorenraum_Gruppe 1.png)
 
 
 # Operationalisierung

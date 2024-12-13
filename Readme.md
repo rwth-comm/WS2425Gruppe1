@@ -14,7 +14,7 @@
 # Faktorenraum
 
 <figure>
-<img src="readme_files/Faktorenraum_Gruppe%201.png"
+<img src="Readme_files/Faktorenraum_Gruppe%201.png"
 alt="Faktorenraum" />
 <figcaption aria-hidden="true">Faktorenraum</figcaption>
 </figure>
