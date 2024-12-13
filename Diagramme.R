@@ -15,12 +15,12 @@ library(ggplot2)
 
 ggplot(df) +
   aes(x = Age) +
-  geom_histogram(bins = 30L, fill = aachen_color("orange")) +
+  geom_histogram(bins = 30L, fill = aachen_color("blue50")) +
   geom_vline(xintercept = mean(df$Age, na.rm = TRUE)) +
   geom_text(x = mean(df$Age, na.rm = TRUE), y = 30, label = paste0("M = ", round(mean(df$Age, na.rm = TRUE), 2)), angle = 90 , vjust = 1.5) +
   labs(x = "Alter in Jahren", 
        y = "Anzahl", 
-       title = paste0("Studentische Altersverteiliung n = (", nrow(df), ")"), 
+       title = paste0("Altersverteiliung n = (", nrow(df), ")"), 
        subtitle = "Histogramm der Altersverteilung", 
        caption = "30 Bins") +
   theme_minimal()
