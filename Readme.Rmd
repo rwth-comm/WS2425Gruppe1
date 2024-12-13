@@ -55,7 +55,7 @@ date: "2024-10-24"
 
 *Diagramm Alterverteilung*
 
-```{r include=FALSE}
+```{r echo=FALSE}
 library(tidyverse)
 library(ggthemes)
 library(AachenColorPalette)
