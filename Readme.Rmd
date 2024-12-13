@@ -3,7 +3,18 @@ title: "Untitled"
 output: md_document
 date: "2024-10-24"
 ---
+```{r include=FALSE}
+library(tidyverse)
+library(ggthemes)
+library(AachenColorPalette)
 
+df <- readRDS("data/data.rds")
+
+display_aachen_colors()
+
+library(ggplot2)
+
+```
 # Teammitglieder
 * NS
 * AB
@@ -56,16 +67,6 @@ date: "2024-10-24"
 *Diagramm Alterverteilung*
 
 ```{r echo=FALSE}
-library(tidyverse)
-library(ggthemes)
-library(AachenColorPalette)
-
-df <- readRDS("data/data.rds")
-
-display_aachen_colors()
-
-library(ggplot2)
-
 ggplot(df) +
   aes(x = Age) +
   geom_histogram(bins = 30L, fill = aachen_color("blue50")) +
@@ -78,4 +79,5 @@ ggplot(df) +
        caption = "30 Bins") +
   theme_minimal()
 ```
+
 
