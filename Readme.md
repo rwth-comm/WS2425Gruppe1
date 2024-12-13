@@ -45,15 +45,57 @@ alt="Faktorenraum" />
 *H1* Es gibt einen Zusammenhang zwischen Alter und dem Vertrauen in
 KI-erstellte Gebührenbescheide.
 
+    cor.test(df$Age, df$TIA_A)
+
+    ## 
+    ##  Pearson's product-moment correlation
+    ## 
+    ## data:  df$Age and df$TIA_A
+    ## t = -0.40617, df = 698, p-value = 0.6847
+    ## alternative hypothesis: true correlation is not equal to 0
+    ## 95 percent confidence interval:
+    ##  -0.08937302  0.05879783
+    ## sample estimates:
+    ##         cor 
+    ## -0.01537199
+
 *H2* Es gibt einen positiven Zusammenhang zwischen der Neigung, in
 Technik zu vertrauen und der Einstellung von Bürger\*innen gegenüber
 einem Chatbot für Rückfragen in der Kommunalverwaltung. (gerichtet;
 Pearson-Korrelation)
 
+    cor.test(df$TIA_B, df$BI_B)
+
+    ## 
+    ##  Pearson's product-moment correlation
+    ## 
+    ## data:  df$TIA_B and df$BI_B
+    ## t = -0.3478, df = 698, p-value = 0.7281
+    ## alternative hypothesis: true correlation is not equal to 0
+    ## 95 percent confidence interval:
+    ##  -0.08718103  0.06099911
+    ## sample estimates:
+    ##         cor 
+    ## -0.01316323
+
 *H3* Es gibt einen negativen Zusammenhang zwischen dem Alter und der
 Nutzungsintention von Bürger\*innen bei einem Chatbot für
 Formularausfüllung in der Kommunalverwaltung. (gerichtet;
 Spearman-Korrelation oder Kendall-Tau-Korellation)
+
+    cor.test(df$Age, df$BI_C)
+
+    ## 
+    ##  Pearson's product-moment correlation
+    ## 
+    ## data:  df$Age and df$BI_C
+    ## t = 1.5299, df = 698, p-value = 0.1265
+    ## alternative hypothesis: true correlation is not equal to 0
+    ## 95 percent confidence interval:
+    ##  -0.01636238  0.13135070
+    ## sample estimates:
+    ##        cor 
+    ## 0.05781055
 
 *Komplexe Zusammenhangshypothese*
 
@@ -68,16 +110,58 @@ KI-gestützten Dienst für Gebührenbescheide in der Kommunalverwaltung.
 Vertrauen in bei einem Chatbot für Rückfragen in der Kommunalverwaltung
 als Personen, die in ländlichen Regionen leben. (Unverbundener T-Test)
 
+    t.test(filter(df, Wohnort == "Großstadt")$TIA_B, filter(df, Wohnort == "Ländlich")$TIA_B)
+
+    ## 
+    ##  Welch Two Sample t-test
+    ## 
+    ## data:  filter(df, Wohnort == "Großstadt")$TIA_B and filter(df, Wohnort == "Ländlich")$TIA_B
+    ## t = -0.52391, df = 429.58, p-value = 0.6006
+    ## alternative hypothesis: true difference in means is not equal to 0
+    ## 95 percent confidence interval:
+    ##  -0.2764276  0.1600768
+    ## sample estimates:
+    ## mean of x mean of y 
+    ##  3.529126  3.587302
+
 *H6* Personen mit einer höheren Neigung, Technik zu vertrauen haben eine
-höhere Nutzungsintention bei einem Chatbot für Formularausfüllung in der
+höhere Nutzungsintention bei einem Chatbot für Rückfragen in der
 Kommunalverwaltung als Personen mit einer geringen Neigung, Technik zu
 vertrauen. (Unverbundener T-Test)
+
+    t.test(filter(df, Vertrauen >= median(df$Vertrauen))$BI_B, filter(df, Vertrauen < median(df$Vertrauen))$BI_B)
+
+    ## 
+    ##  Welch Two Sample t-test
+    ## 
+    ## data:  filter(df, Vertrauen >= median(df$Vertrauen))$BI_B and filter(df, Vertrauen < median(df$Vertrauen))$BI_B
+    ## t = -1.3175, df = 580.32, p-value = 0.1882
+    ## alternative hypothesis: true difference in means is not equal to 0
+    ## 95 percent confidence interval:
+    ##  -0.24774358  0.04881003
+    ## sample estimates:
+    ## mean of x mean of y 
+    ##  3.451258  3.550725
 
 *H7* Die Nutzungsintention von BürgerInnen bei einem Chatbot für
 Rückfragen in der Kommunalverwaltung unterscheidet sich von der
 Nutzungsintention von BürgerInnen bei einem Chatbot für die
 Formularausfüllung in der Kommunalverwaltung. \[Within-subject-design
 (Verbundener T- Test)\]
+
+    t.test(df$BI_B, df$BI_C, paired = T)
+
+    ## 
+    ##  Paired t-test
+    ## 
+    ## data:  df$BI_B and df$BI_C
+    ## t = -0.61198, df = 699, p-value = 0.5407
+    ## alternative hypothesis: true mean difference is not equal to 0
+    ## 95 percent confidence interval:
+    ##  -0.13025410  0.06834934
+    ## sample estimates:
+    ## mean difference 
+    ##     -0.03095238
 
 *Komplexe Unterschiedshypothese*
 
@@ -87,4 +171,4 @@ Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
 
 *Diagramm Alterverteilung*
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-2-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-8-1.png)
