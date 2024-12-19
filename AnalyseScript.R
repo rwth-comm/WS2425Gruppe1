@@ -4,7 +4,7 @@ library(psych)
 source("qualtricshelpers.R")
 
 # Daten einlesen ----
-raw <- load_qualtrics_csv("data/Methodenseminar+WS2425_6.+Dezember+2024_13.12.csv")
+raw <- load_qualtrics_csv("data/Testdaten_echter_Fragebogen.csv")
 
 # Rohdaten filtern ----
 raw %>% 
@@ -13,10 +13,10 @@ raw %>%
   filter(DSGVO == 1) -> raw
 
 # Überflüssige Variablen entfernen ----
-raw.short <- raw[,c(6, 19:22, 24:37, 65:70, 76:83, 89:90, 98:103, 112:114)]
+raw.short <- raw[,c(6, 9, 19:22, 24:37, 65:70, 74:81, 85:86, 94:99, 107:109, 63)]
 
 # Variablen umbenennen ---- 
-generate_codebook(raw.short, "data/Methodenseminar+WS2425_6.+Dezember+2024_13.12.csv", "data/codebook.csv")
+generate_codebook(raw.short, "data/Testdaten_echter_Fragebogen.csv", "data/codebook.csv")
 codebook <- read_codebook("data/codebook_final.csv")
 names(raw.short) <- codebook$variable
 
