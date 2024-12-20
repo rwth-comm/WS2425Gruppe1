@@ -7,6 +7,7 @@ date: "2024-10-24"
 library(tidyverse)
 library(ggthemes)
 library(AachenColorPalette)
+library(jmv)
 
 df <- readRDS("data/data.rds")
 
