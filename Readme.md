@@ -45,6 +45,11 @@ alt="Faktorenraum" />
 *H1* Es gibt einen Zusammenhang zwischen Alter und dem Vertrauen in
 KI-erstellte Gebührenbescheide.
 
+    ## Warning: Removed 5 rows containing non-finite outside the scale range
+    ## (`stat_bin()`).
+
+![](Readme_files/figure-markdown_strict/unnamed-chunk-3-1.png)
+
 *H2* Es gibt einen positiven Zusammenhang zwischen der Neigung, in
 Technik zu vertrauen und der Einstellung von Bürger\*innen gegenüber
 einem Chatbot für Rückfragen in der Kommunalverwaltung. (gerichtet;
@@ -87,4 +92,7 @@ Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
 
 *Diagramm Alterverteilung*
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-8-1.png)
+    ## Warning: Removed 5 rows containing non-finite outside the scale range
+    ## (`stat_bin()`).
+
+![](Readme_files/figure-markdown_strict/unnamed-chunk-10-1.png)

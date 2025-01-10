@@ -45,6 +45,19 @@ library(ggplot2)
 ```{r include=FALSE}
 cor.test(df$Age, df$TIA_A)
 ```
+```{r echo=FALSE}
+ggplot(df) +
+  aes(x = Age) +
+  geom_histogram(bins = 30L, fill = aachen_color("blue50")) +
+  geom_vline(xintercept = mean(df$Age, na.rm = TRUE)) +
+  geom_text(x = mean(df$Age, na.rm = TRUE), y = 30, label = paste0("M = ", round(mean(df$Age, na.rm = TRUE), 2)), angle = 90 , vjust = 1.5) +
+  labs(x = "Alter in Jahren", 
+       y = "Anzahl", 
+       title = paste0("Altersverteiliung n = (", nrow(df), ")"), 
+       subtitle = "Histogramm der Altersverteilung", 
+       caption = "30 Bins") +
+  theme_minimal()
+```
 
 
 *H2* Es gibt einen positiven Zusammenhang zwischen der Neigung, in Technik zu vertrauen und der Einstellung von Bürger*innen gegenüber einem Chatbot für Rückfragen in der Kommunalverwaltung. (gerichtet; Pearson-Korrelation)
@@ -88,6 +101,9 @@ t.test(df$BI_B, df$BI_C, paired = T)
 *Komplexe Unterschiedshypothese*
 
 *H8* Geschlecht hat einen Einfluss auf die Nutzungsintention und das Vertrauen von Bürger*innen in einen KI-gestützten Dienst für Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
+```{r include=FALSE}
+mancova(df, factors = "Gender", deps = c("BI_A", "TIA_A"))
+```
 
 *Diagramm Alterverteilung*
 
