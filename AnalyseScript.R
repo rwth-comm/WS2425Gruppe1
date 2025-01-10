@@ -9,7 +9,7 @@ raw <- load_qualtrics_csv("data/finale Testdaten_echter Fragebogen.csv")
 # Rohdaten filtern ----
 raw %>% 
   filter(Progress == 100) %>% 
-  filter(Status == 2) %>% 
+  filter(Status == 0) %>% 
   filter(DSGVO == 1) -> raw
 
 # Überflüssige Variablen entfernen ----
