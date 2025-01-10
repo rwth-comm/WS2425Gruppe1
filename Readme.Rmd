@@ -47,16 +47,17 @@ cor.test(df$Age, df$TIA_A)
 ```
 ```{r echo=FALSE}
 ggplot(df) +
-  aes(x = Age) +
-  geom_histogram(bins = 30L, fill = aachen_color("blue50")) +
-  geom_vline(xintercept = mean(df$Age, na.rm = TRUE)) +
-  geom_text(x = mean(df$Age, na.rm = TRUE), y = 30, label = paste0("M = ", round(mean(df$Age, na.rm = TRUE), 2)), angle = 90 , vjust = 1.5) +
-  labs(x = "Alter in Jahren", 
-       y = "Anzahl", 
-       title = paste0("Altersverteiliung n = (", nrow(df), ")"), 
-       subtitle = "Histogramm der Altersverteilung", 
-       caption = "30 Bins") +
+  aes(x = Age, y = TIA_A) +
+  geom_jitter(colour = "#112446") +
+  labs(
+    x = "Alter in Jahren",
+    y = "Vertrauen in KI",
+    title = paste0("Zusammenhangs zwischen Alter und Vetrauen n = (", nrow(df), ")"),
+    subtitle = "Jitter-Plot des Zusammenhangs zwischen Alter und Vetrauen in KI-erstellte Gebührenbescheide",
+    caption = ""
+  ) +
   theme_minimal()
+
 ```
 
 
@@ -64,11 +65,31 @@ ggplot(df) +
 ```{r include=FALSE}
 cor.test(df$TIA_B, df$BI_B)
 ```
+```{r echo=FALSE}
+ggplot(df) +
+  aes(x = TIA_B, y = BI_B) +
+  geom_jitter(colour = "#112446") +
+  labs(
+    x = "Neigung, in Technik zu vertrauen",
+    y = "Einstellung gegenüber KI",
+    title = paste0("Zusammenhangs zwischen der Neigung, in Technik zu vertrauen und der Einstellung von Bürger*innen gegenüber einem Chatbot n = (", nrow(df), ")"),
+    subtitle = "Jitter-Plot des Zusammenhangs zwischen der Neigung, in Technik zu vertrauen und
+    der Einstellung von Bürger*innen gegenüber einem Chatbot für Rückfragen 
+    in der Kommunalverwaltung ",
+    caption = ""
+  ) +
+  theme_minimal()
+
+
+```
 
 
 *H3* Es gibt einen negativen Zusammenhang zwischen dem Alter und der Nutzungsintention von Bürger*innen bei einem Chatbot für Formularausfüllung in der Kommunalverwaltung. (gerichtet; Spearman-Korrelation oder Kendall-Tau-Korellation)
 ```{r include=FALSE}
 cor.test(df$Age, df$BI_C)
+```
+```{r echo=FALSE}
+
 ```
 
 
