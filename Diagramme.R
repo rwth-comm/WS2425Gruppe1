@@ -1,7 +1,7 @@
-install.packages("tidyverse")
-install.packages("ggthemes")
-remotes::install_github("christianholland/AachenColorPalette")
-install.packages("esquisse")
+#install.packages("tidyverse")
+#install.packages("ggthemes")
+#remotes::install_github("christianholland/AachenColorPalette")
+#install.packages("esquisse")
 
 library(tidyverse)
 library(ggthemes)

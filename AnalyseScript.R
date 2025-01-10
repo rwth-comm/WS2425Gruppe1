@@ -39,6 +39,8 @@ raw.short$Wohnort %>%
   as.factor() -> raw.short$Wohnort
 
 # Qualitätskontrolle ---- 
+# Wir machen keine Qualitätskontrolle, weil unsere Cronbachs-Alpha-Werte 
+# gut sind und wir bereits ein ausführliches Datacleaning durchgeführt haben.
 
 # Skalenwerte berechnen ----
 schluesselliste <- list(
