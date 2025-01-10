@@ -62,6 +62,11 @@ Nutzungsintention von Bürger\*innen bei einem Chatbot für
 Formularausfüllung in der Kommunalverwaltung. (gerichtet;
 Spearman-Korrelation oder Kendall-Tau-Korellation)
 
+    ## Warning: Removed 5 rows containing missing values or values outside the scale range
+    ## (`geom_point()`).
+
+![](Readme_files/figure-markdown_strict/unnamed-chunk-7-1.png)
+
 *Komplexe Zusammenhangshypothese*
 
 *H4* Der Bildungsstand, Offenheit und Technikaffinität haben einen
@@ -75,10 +80,14 @@ KI-gestützten Dienst für Gebührenbescheide in der Kommunalverwaltung.
 Vertrauen in bei einem Chatbot für Rückfragen in der Kommunalverwaltung
 als Personen, die in ländlichen Regionen leben. (Unverbundener T-Test)
 
+![](Readme_files/figure-markdown_strict/unnamed-chunk-9-1.png)
+
 *H6* Personen mit einer höheren Neigung, Technik zu vertrauen haben eine
 höhere Nutzungsintention bei einem Chatbot für Rückfragen in der
 Kommunalverwaltung als Personen mit einer geringen Neigung, Technik zu
 vertrauen. (Unverbundener T-Test)
+
+![](Readme_files/figure-markdown_strict/unnamed-chunk-11-1.png)
 
 *H7* Die Nutzungsintention von BürgerInnen bei einem Chatbot für
 Rückfragen in der Kommunalverwaltung unterscheidet sich von der
@@ -86,15 +95,20 @@ Nutzungsintention von BürgerInnen bei einem Chatbot für die
 Formularausfüllung in der Kommunalverwaltung. \[Within-subject-design
 (Verbundener T- Test)\]
 
+![](Readme_files/figure-markdown_strict/unnamed-chunk-13-1.png)
+
 *Komplexe Unterschiedshypothese*
 
 *H8* Geschlecht hat einen Einfluss auf die Nutzungsintention und das
 Vertrauen von Bürger\*innen in einen KI-gestützten Dienst für
 Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
 
+![](Readme_files/figure-markdown_strict/unnamed-chunk-15-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-16-1.png)
+
 *Diagramm Alterverteilung*
 
     ## Warning: Removed 5 rows containing non-finite outside the scale range
     ## (`stat_bin()`).
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-17-1.png)

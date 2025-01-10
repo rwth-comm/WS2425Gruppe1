@@ -89,7 +89,19 @@ ggplot(df) +
 cor.test(df$Age, df$BI_C)
 ```
 ```{r echo=FALSE}
-
+ggplot(df) +
+  aes(x = Age, y = BI_C) +
+  geom_jitter(colour = "#112446") +
+  labs(
+    x = "Alter",
+    y = "Nutzungsintention zu KI",
+    title = paste0("Zusammenhangs zwischen Alter und der Nutzungsintention n = (", nrow(df), ")"),
+    subtitle = "Jitter-Plot des Zusammenhangs zwischen dem Alter 
+    und der Nutzungsintention von Bürger*innen bei einem Chatbot 
+    für Formularausfüllung in der Kommunalverwaltung. ",
+    caption = ""
+  ) +
+  theme_minimal()
 ```
 
 
@@ -103,11 +115,40 @@ cor.test(df$Age, df$BI_C)
 ```{r include=FALSE}
 t.test(filter(df, Wohnort == "Großstadt")$TIA_B, filter(df, Wohnort == "Ländlich")$TIA_B)
 ```
+```{r echo=FALSE}
+ggplot(df) +
+  aes(x = Wohnort, y = TIA_B) +
+  geom_col(fill = "#112446") +
+  labs(
+    x = "Wohnort",
+    y = "Vertrauen in KI",
+    title = paste0("Vertrauen in einen Chatbot abhängig vom Wohnort n = (", nrow(df), ")"),
+    subtitle = "Balkendiagramm zu dem Zusammenhang in das Vertrauen von einem Chatbot für Rückfragen
+    abhängig vom Wohnort",
+    caption = " "
+  ) +
+  theme_minimal()
+```
 
 
 *H6* Personen mit einer höheren Neigung, Technik zu vertrauen haben eine höhere Nutzungsintention bei einem Chatbot für Rückfragen in der Kommunalverwaltung als Personen mit einer geringen Neigung, Technik zu vertrauen. (Unverbundener T-Test)
 ```{r include=FALSE}
 t.test(filter(df, Vertrauen >= median(df$Vertrauen))$BI_B, filter(df, Vertrauen < median(df$Vertrauen))$BI_B)
+```
+```{r echo=FALSE}
+ggplot(df) +
+  aes(x = TIA_B, y = BI_B) +
+  geom_jitter() +
+  labs(
+    x = "Neigung, in Technik zu vertrauen",
+    y = "Nutzungsintention",
+    title = paste0("Neigung, Technik zu vertrauen und Nutzungsintention eines Chatbots n = (", nrow(df), ")"),
+    subtitle = "Jitter-Plot der Neigung, in Technik zu vertrauen und der 
+    Nutzungsintention eines Chatbots für Rückfragen in 
+    der Kommunalverwaltung",
+    caption = " "
+  ) +
+  theme_minimal()
 ```
 
 
@@ -115,6 +156,21 @@ t.test(filter(df, Vertrauen >= median(df$Vertrauen))$BI_B, filter(df, Vertrauen 
 *H7*  Die Nutzungsintention von BürgerInnen bei einem Chatbot für Rückfragen in der Kommunalverwaltung unterscheidet sich von der Nutzungsintention von BürgerInnen bei einem Chatbot für die Formularausfüllung in der Kommunalverwaltung. [Within-subject-design (Verbundener T- Test)]
 ```{r include=FALSE}
 t.test(df$BI_B, df$BI_C, paired = T)
+```
+```{r echo=FALSE}
+ggplot(df) +
+  aes(x = BI_B, y = BI_C) +
+  geom_jitter() +
+  labs(
+    x = "Nutzungsintention bei Chatbot Kommunalverwaltung",
+    y = "Nutzungsintention bei Chatbot Formularausfüllung",
+    title = paste0("Unterschied der Nutzungsintention n = (", nrow(df), ")"),
+    subtitle = "Unterschied der Nutzungsintention von BürgerInnen 
+    bei Chatbots für Rückfragen in der Kommunalverwaltung 
+    und der Formularausfüllung",
+    caption = " "
+  ) +
+  theme_minimal()
 ```
 
 
@@ -125,6 +181,37 @@ t.test(df$BI_B, df$BI_C, paired = T)
 ```{r include=FALSE}
 mancova(df, factors = "Gender", deps = c("BI_A", "TIA_A"))
 ```
+```{r echo=FALSE}
+ggplot(df) +
+  aes(x = Gender, y = BI_A) +
+  geom_col(fill = "#112446") +
+  labs(
+    x = "Geschlecht",
+    y = "Nutzungsintention von KI",
+    title = paste0("Einfluss des Geschlechts auf die Nutzungsintention n = (", nrow(df), ")"),
+    subtitle = "Balkendiagramm des Einflusses des Geschlechts auf die Nutzungsintention
+    von Bürger*innen in einen KI-gestützten Dienst
+    für Gebührenbescheide in der Kommunalverwaltung",
+    caption = " "
+  ) +
+  theme_minimal()
+```
+```{r echo=FALSE}
+ggplot(df) +
+  aes(x = Gender, y = TIA_A) +
+  geom_col(fill = "#112446") +
+  labs(
+    x = "Geschlecht",
+    y = "Vertrauen in KI",
+    title = "Einfluss des Geschlechts auf das Vertrauen",
+    subtitle = "Balkendiagramm des Einflusses des Geschlechts auf das Vertrauen
+    von Bürger*innen in einen KI-gestützten Dienst
+    für Gebührenbescheide in der Kommunalverwaltung",
+    caption = " "
+  ) +
+  theme_minimal()
+```
+
 
 *Diagramm Alterverteilung*
 
