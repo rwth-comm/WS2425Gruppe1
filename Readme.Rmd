@@ -72,7 +72,9 @@ ggplot(df) +
   labs(
     x = "Neigung, in Technik zu vertrauen",
     y = "Einstellung gegenüber KI",
-    title = paste0("Zusammenhangs zwischen der Neigung, in Technik zu vertrauen und der Einstellung von Bürger*innen gegenüber einem Chatbot n = (", nrow(df), ")"),
+    title = paste0("Zusammenhangs zwischen der Neigung, in Technik zu vertrauen 
+                   und der Einstellung von Bürger*innen gegenüber einem 
+                   Chatbot n = (", nrow(df), ")"),
     subtitle = "Jitter-Plot des Zusammenhangs zwischen der Neigung, in Technik zu vertrauen und
     der Einstellung von Bürger*innen gegenüber einem Chatbot für Rückfragen 
     in der Kommunalverwaltung ",
@@ -94,7 +96,7 @@ ggplot(df) +
   geom_jitter(colour = "#112446") +
   labs(
     x = "Alter",
-    y = "Nutzungsintention zu KI",
+    y = "Nutzungsintention von KI",
     title = paste0("Zusammenhangs zwischen Alter und der Nutzungsintention n = (", nrow(df), ")"),
     subtitle = "Jitter-Plot des Zusammenhangs zwischen dem Alter 
     und der Nutzungsintention von Bürger*innen bei einem Chatbot 
