@@ -4,7 +4,7 @@ library(psych)
 source("qualtricshelpers.R")
 
 # Daten einlesen ----
-raw <- load_qualtrics_csv("data/Testdaten_echter_Fragebogen.csv")
+raw <- load_qualtrics_csv("data/finale Testdaten_echter Fragebogen.csv")
 
 # Rohdaten filtern ----
 raw %>% 
@@ -16,7 +16,7 @@ raw %>%
 raw.short <- raw[,c(6, 9, 19:22, 24:37, 65:70, 74:81, 85:86, 94:99, 107:109, 63)]
 
 # Variablen umbenennen ---- 
-generate_codebook(raw.short, "data/Testdaten_echter_Fragebogen.csv", "data/codebook.csv")
+generate_codebook(raw.short, "data/finale Testdaten_echter Fragebogen.csv", "data/codebook.csv")
 codebook <- read_codebook("data/codebook_final.csv")
 names(raw.short) <- codebook$variable
 
@@ -62,7 +62,7 @@ scores$alpha
 data <- bind_cols(raw.short, scores$scores) 
 
 # Daten exprotieren ---- 
-write_rds(data, "data/data.rds")
+write_rds(data, "data/data.rds") 
 
 
 
