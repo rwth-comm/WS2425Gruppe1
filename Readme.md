@@ -50,6 +50,15 @@ alt="Faktorenraum" />
     ## TIA_B         0.84 3.77 1.10 1.00 6.00
     ## BI_C          0.96 4.04 1.20 1.00 6.00
 
+# Stichprobe
+
+*Diagramm Alterverteilung*
+
+    ## Warning: Removed 5 rows containing non-finite outside the scale range
+    ## (`stat_bin()`).
+
+![](Readme_files/figure-markdown_strict/unnamed-chunk-2-1.png)
+
 # Hypothesen
 
 *Einfache Zusammenhangshypothese*
@@ -60,14 +69,14 @@ KI-erstellte Gebührenbescheide.
     ## Warning: Removed 5 rows containing missing values or values outside the scale range
     ## (`geom_point()`).
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-3-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-4-1.png)
 
 *H2* Es gibt einen positiven Zusammenhang zwischen der Neigung, in
 Technik zu vertrauen und der Einstellung von Bürger\*innen gegenüber
 einem Chatbot für Rückfragen in der Kommunalverwaltung. (gerichtet;
 Pearson-Korrelation)
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-5-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-6-1.png)
 
 *H3* Es gibt einen negativen Zusammenhang zwischen dem Alter und der
 Nutzungsintention von Bürger\*innen bei einem Chatbot für
@@ -77,7 +86,7 @@ Spearman-Korrelation oder Kendall-Tau-Korellation)
     ## Warning: Removed 5 rows containing missing values or values outside the scale range
     ## (`geom_point()`).
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-7-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-8-1.png)
 
 *Komplexe Zusammenhangshypothese*
 
@@ -152,14 +161,14 @@ KI-gestützten Dienst für Gebührenbescheide in der Kommunalverwaltung.
 Vertrauen in bei einem Chatbot für Rückfragen in der Kommunalverwaltung
 als Personen, die in ländlichen Regionen leben. (Unverbundener T-Test)
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-10-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-11-1.png)
 
 *H6* Personen mit einer höheren Neigung, Technik zu vertrauen haben eine
 höhere Nutzungsintention bei einem Chatbot für Rückfragen in der
 Kommunalverwaltung als Personen mit einer geringen Neigung, Technik zu
 vertrauen. (Unverbundener T-Test)
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-13-1.png)
 
 *H7* Die Nutzungsintention von BürgerInnen bei einem Chatbot für
 Rückfragen in der Kommunalverwaltung unterscheidet sich von der
@@ -167,7 +176,7 @@ Nutzungsintention von BürgerInnen bei einem Chatbot für die
 Formularausfüllung in der Kommunalverwaltung. \[Within-subject-design
 (Verbundener T- Test)\]
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-14-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-15-1.png)
 
 *Komplexe Unterschiedshypothese*
 
@@ -199,9 +208,4 @@ Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
     ##                 TIA_A                     320.631206    235       1.364388                             
     ##  ─────────────────────────────────────────────────────────────────────────────────────────────────────
 
-*Diagramm Alterverteilung*
-
-    ## Warning: Removed 5 rows containing non-finite outside the scale range
-    ## (`stat_bin()`).
-
-![](Readme_files/figure-markdown_strict/unnamed-chunk-16-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-17-1.png)![](Readme_files/figure-markdown_strict/unnamed-chunk-17-2.png)
