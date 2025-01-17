@@ -118,9 +118,14 @@ ggplot(df) +
 t.test(filter(df, Wohnort == "Großstadt")$TIA_B, filter(df, Wohnort == "Ländlich")$TIA_B)
 ```
 ```{r echo=FALSE}
-ggplot(df) +
-  aes(x = Wohnort, y = TIA_B) +
-  geom_col(fill = "#112446") +
+df %>% 
+  filter(Wohnort == "Großstadt" | Wohnort == "Ländlich" | Wohnort == "Vorort / Kleinstadt") %>% 
+  group_by(Wohnort) %>% 
+  summarise(Mean = mean(TIA_B, na.rm = TRUE), SE = plotrix::std.error(TIA_B, na.rm = TRUE)*1.96) %>% 
+ggplot() +
+  aes(x = Wohnort, weight = Mean, ymin = Mean - SE, ymax = Mean + SE) +
+  geom_bar(fill = aachen_color("blue50")) +
+  geom_errorbar( width = 0.2) +
   labs(
     x = "Wohnort",
     y = "Vertrauen in KI",
@@ -138,14 +143,18 @@ ggplot(df) +
 t.test(filter(df, Vertrauen >= median(df$Vertrauen))$BI_B, filter(df, Vertrauen < median(df$Vertrauen))$BI_B)
 ```
 ```{r echo=FALSE}
-ggplot(df) +
-  aes(x = TIA_B, y = BI_B) +
-  geom_jitter() +
+df %>% 
+  group_by(TIA_B) %>% 
+  summarise(Mean = mean(BI_B, na.rm = TRUE), SE = plotrix::std.error(BI_B, na.rm = TRUE)*1.96) %>% 
+ggplot() +
+  aes(x = TIA_B, weight = Mean, ymin = Mean - SE, ymax = Mean + SE) +
+  geom_bar(fill = aachen_color("blue50")) +
+  geom_errorbar( width = 0.2) +
   labs(
     x = "Neigung, in Technik zu vertrauen",
     y = "Nutzungsintention",
     title = paste0("Neigung, Technik zu vertrauen und Nutzungsintention eines Chatbots n = (", nrow(df), ")"),
-    subtitle = "Jitter-Plot der Neigung, in Technik zu vertrauen und der 
+    subtitle = "Balkendiagramm der Neigung, in Technik zu vertrauen und der 
     Nutzungsintention eines Chatbots für Rückfragen in 
     der Kommunalverwaltung",
     caption = " "
@@ -160,14 +169,18 @@ ggplot(df) +
 t.test(df$BI_B, df$BI_C, paired = T)
 ```
 ```{r echo=FALSE}
-ggplot(df) +
-  aes(x = BI_B, y = BI_C) +
-  geom_jitter() +
+df %>% 
+   group_by(BI_B) %>% 
+  summarise(Mean = mean(BI_C, na.rm = TRUE), SE = plotrix::std.error(BI_C, na.rm = TRUE)*1.96) %>% 
+ggplot() +
+  aes(x = BI_B, weight = Mean, ymin = Mean - SE, ymax = Mean + SE) +
+  geom_bar(fill = aachen_color("blue50")) +
+  geom_errorbar( width = 0.2) +
   labs(
     x = "Nutzungsintention bei Chatbot Kommunalverwaltung",
     y = "Nutzungsintention bei Chatbot Formularausfüllung",
     title = paste0("Unterschied der Nutzungsintention n = (", nrow(df), ")"),
-    subtitle = "Unterschied der Nutzungsintention von BürgerInnen 
+    subtitle = "Balkendiagramm der Nutzungsintention von BürgerInnen 
     bei Chatbots für Rückfragen in der Kommunalverwaltung 
     und der Formularausfüllung",
     caption = " "
@@ -180,39 +193,10 @@ ggplot(df) +
 *Komplexe Unterschiedshypothese*
 
 *H8* Geschlecht hat einen Einfluss auf die Nutzungsintention und das Vertrauen von Bürger*innen in einen KI-gestützten Dienst für Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
-```{r include=FALSE}
+```{r echo=FALSE}
 mancova(df, factors = "Gender", deps = c("BI_A", "TIA_A"))
 ```
-```{r echo=FALSE}
-ggplot(df) +
-  aes(x = Gender, y = BI_A) +
-  geom_col(fill = "#112446") +
-  labs(
-    x = "Geschlecht",
-    y = "Nutzungsintention von KI",
-    title = paste0("Einfluss des Geschlechts auf die Nutzungsintention n = (", nrow(df), ")"),
-    subtitle = "Balkendiagramm des Einflusses des Geschlechts auf die Nutzungsintention
-    von Bürger*innen in einen KI-gestützten Dienst
-    für Gebührenbescheide in der Kommunalverwaltung",
-    caption = " "
-  ) +
-  theme_minimal()
-```
-```{r echo=FALSE}
-ggplot(df) +
-  aes(x = Gender, y = TIA_A) +
-  geom_col(fill = "#112446") +
-  labs(
-    x = "Geschlecht",
-    y = "Vertrauen in KI",
-    title = "Einfluss des Geschlechts auf das Vertrauen",
-    subtitle = "Balkendiagramm des Einflusses des Geschlechts auf das Vertrauen
-    von Bürger*innen in einen KI-gestützten Dienst
-    für Gebührenbescheide in der Kommunalverwaltung",
-    caption = " "
-  ) +
-  theme_minimal()
-```
+
 
 
 *Diagramm Alterverteilung*

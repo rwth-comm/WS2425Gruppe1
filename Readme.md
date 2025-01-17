@@ -87,6 +87,13 @@ höhere Nutzungsintention bei einem Chatbot für Rückfragen in der
 Kommunalverwaltung als Personen mit einer geringen Neigung, Technik zu
 vertrauen. (Unverbundener T-Test)
 
+    ## Warning: The following aesthetics were dropped during statistical transformation: ymin
+    ## and ymax.
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
 ![](Readme_files/figure-markdown_strict/unnamed-chunk-11-1.png)
 
 *H7* Die Nutzungsintention von BürgerInnen bei einem Chatbot für
@@ -94,6 +101,13 @@ Rückfragen in der Kommunalverwaltung unterscheidet sich von der
 Nutzungsintention von BürgerInnen bei einem Chatbot für die
 Formularausfüllung in der Kommunalverwaltung. \[Within-subject-design
 (Verbundener T- Test)\]
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: ymin
+    ## and ymax.
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
 
 ![](Readme_files/figure-markdown_strict/unnamed-chunk-13-1.png)
 
@@ -103,12 +117,33 @@ Formularausfüllung in der Kommunalverwaltung. \[Within-subject-design
 Vertrauen von Bürger\*innen in einen KI-gestützten Dienst für
 Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-15-1.png)
-![](Readme_files/figure-markdown_strict/unnamed-chunk-16-1.png)
+    ## 
+    ##  MANCOVA
+    ## 
+    ##  Multivariate Tests                                                                     
+    ##  ────────────────────────────────────────────────────────────────────────────────────── 
+    ##                                    value         F            df1    df2    p           
+    ##  ────────────────────────────────────────────────────────────────────────────────────── 
+    ##    Gender    Pillai's Trace        0.02428113    0.9626985      6    470    0.4499818   
+    ##              Wilks' Lambda          0.9757592    0.9629343      6    468    0.4498240   
+    ##              Hotelling's Trace     0.02480171    0.9631332      6    466    0.4496917   
+    ##              Roy's Largest Root    0.02300582     1.802123      3    235    0.1474812   
+    ##  ────────────────────────────────────────────────────────────────────────────────────── 
+    ## 
+    ## 
+    ##  Univariate Tests                                                                                      
+    ##  ───────────────────────────────────────────────────────────────────────────────────────────────────── 
+    ##                 Dependent Variable    Sum of Squares    df     Mean Square    F            p           
+    ##  ───────────────────────────────────────────────────────────────────────────────────────────────────── 
+    ##    Gender       BI_A                        5.799178      3       1.933059    1.8009735    0.1476956   
+    ##                 TIA_A                       3.465029      3       1.155010    0.8465403    0.4696509   
+    ##    Residuals    BI_A                      252.235225    235       1.073341                             
+    ##                 TIA_A                     320.631206    235       1.364388                             
+    ##  ─────────────────────────────────────────────────────────────────────────────────────────────────────
 
 *Diagramm Alterverteilung*
 
     ## Warning: Removed 5 rows containing non-finite outside the scale range
     ## (`stat_bin()`).
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-17-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-15-1.png)
