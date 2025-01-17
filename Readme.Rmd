@@ -4,6 +4,7 @@ output: md_document
 date: "2024-10-24"
 ---
 ```{r include=FALSE}
+library(psych)
 library(tidyverse)
 library(ggthemes)
 library(AachenColorPalette)
@@ -36,6 +37,14 @@ library(ggplot2)
 * Technikaffinität: interaktionsbezogene Technikaffinität (ATI) nach [Franke, Attig, Wessel (2019)](https://ati-scale.org/assets/scales/ati-scala_german_2022-02-25.pdf "Franke, Attig, Wessel(2019. Fragebogen zur interaktionsbezogenen Technikaffinität (ATI) (Affinity for Technology (ATI)Scale, Deutsche Version))") in 9 Items. 
 * Offenheit: Big 5 Inventory (BFI-10) nach [Rammstedt, Kemper, Klein, Beierlein, Kovaleva(2014)](https://doi.org/10.6102/zis76 "Rammstedt, B., Kemper, C.J., Klein, M.C., Beierlein, C., Kovaleva, A.(2014. Big 5 Inventory)") in 10 Items.
 * Handlungsakzeptanz: Behavioural Attention - User Acceptance of Information Technology nach [Venkatesh, Morris, Davis, Davis(2003)](https://www.jstor.org/stable/30036540 "Venkatesh, Morris, Davis, Davis(2003. User Acceptance of Information Technology") in 3 Items.
+
+# Deskriptive Statistik
+```{r descriptive, echo=FALSE}
+descriptives <- psych::describe(df)[c(47:50,52,53,55,56),c(3,4,8,9)]
+descriptives$alpha <- c(0.465214657291492, 0.639976566831606, 0.892375749746361, 
+0.738053724522986, 0.904839950075016, 0.93842635249218, 0.835814252681724, 0.957853468239536)
+descriptives[,c(5, 1:4)]
+```
 
 # Hypothesen
 
@@ -110,6 +119,15 @@ ggplot(df) +
 *Komplexe Zusammenhangshypothese*
 
 *H4* Der Bildungsstand, Offenheit und Technikaffinität haben einen Einfluss auf die Nutzungsintention von Bürger*innen bei einem KI-gestützten Dienst für Gebührenbescheide in der Kommunalverwaltung. (Multiple lineare Regression) 
+```{r echo=FALSE}
+df$bildungsabschlussforregression <- as.numeric(df$Bildungsabschluss)
+jmv::linReg(df,
+            dep = c("BI_A"),
+            covs = c("bildungsabschlussforregression", "BF_Offenheit", "ATI"),
+            blocks = c("bildungsabschlussforregression", "ATI", "BF_Offenheit"),
+            r2Adj = TRUE, stdEst = TRUE, modelTest = TRUE)
+```
+
 
 *Einfache Unterschiedshypothese*
 
@@ -143,11 +161,12 @@ ggplot() +
 t.test(filter(df, Vertrauen >= median(df$Vertrauen))$BI_B, filter(df, Vertrauen < median(df$Vertrauen))$BI_B)
 ```
 ```{r echo=FALSE}
+df$trustgroup <- cut(df$Vertrauen, breaks = c(-Inf, median(df$Vertrauen), +Inf),labels = c("niedrig", "hoch"))
 df %>% 
-  group_by(TIA_B) %>% 
+  group_by(trustgroup) %>% 
   summarise(Mean = mean(BI_B, na.rm = TRUE), SE = plotrix::std.error(BI_B, na.rm = TRUE)*1.96) %>% 
 ggplot() +
-  aes(x = TIA_B, weight = Mean, ymin = Mean - SE, ymax = Mean + SE) +
+  aes(x = trustgroup, weight = Mean, ymin = Mean - SE, ymax = Mean + SE) +
   geom_bar(fill = aachen_color("blue50")) +
   geom_errorbar( width = 0.2) +
   labs(
@@ -169,11 +188,13 @@ ggplot() +
 t.test(df$BI_B, df$BI_C, paired = T)
 ```
 ```{r echo=FALSE}
-df %>% 
-   group_by(BI_B) %>% 
-  summarise(Mean = mean(BI_C, na.rm = TRUE), SE = plotrix::std.error(BI_C, na.rm = TRUE)*1.96) %>% 
+df_paired <- data.frame(group = c(rep("Rückfragen", nrow(df)), rep("Formularausfüllung", nrow(df))),
+                        value = c(df$BI_B, df$BI_C))
+df_paired %>% 
+   group_by(group) %>% 
+  summarise(Mean = mean(value, na.rm = TRUE), SE = plotrix::std.error(value, na.rm = TRUE)*1.96) %>% 
 ggplot() +
-  aes(x = BI_B, weight = Mean, ymin = Mean - SE, ymax = Mean + SE) +
+  aes(x = group, weight = Mean, ymin = Mean - SE, ymax = Mean + SE) +
   geom_bar(fill = aachen_color("blue50")) +
   geom_errorbar( width = 0.2) +
   labs(

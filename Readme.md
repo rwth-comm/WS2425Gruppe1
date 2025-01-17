@@ -38,6 +38,18 @@ alt="Faktorenraum" />
     Davis(2003)](https://www.jstor.org/stable/30036540 "Venkatesh, Morris, Davis, Davis(2003. User Acceptance of Information Technology")
     in 3 Items.
 
+# Deskriptive Statistik
+
+    ##              alpha mean   sd  min  max
+    ## BF_Offenheit  0.47 4.17 1.09 1.50 6.00
+    ## Vertrauen     0.64 3.44 0.85 1.00 6.00
+    ## ATI           0.89 3.58 0.98 1.33 5.78
+    ## BI_A          0.74 3.77 1.03 1.00 6.00
+    ## TIA_A         0.90 3.56 1.16 1.00 6.00
+    ## BI_B          0.94 4.16 1.10 1.00 6.00
+    ## TIA_B         0.84 3.77 1.10 1.00 6.00
+    ## BI_C          0.96 4.04 1.20 1.00 6.00
+
 # Hypothesen
 
 *Einfache Zusammenhangshypothese*
@@ -74,27 +86,80 @@ Einfluss auf die Nutzungsintention von Bürger\*innen bei einem
 KI-gestützten Dienst für Gebührenbescheide in der Kommunalverwaltung.
 (Multiple lineare Regression)
 
+    ## 
+    ##  LINEAR REGRESSION
+    ## 
+    ##  Model Fit Measures                                                                         
+    ##  ────────────────────────────────────────────────────────────────────────────────────────── 
+    ##    Model    R            R²            Adjusted R²    F           df1    df2    p           
+    ##  ────────────────────────────────────────────────────────────────────────────────────────── 
+    ##        1    0.1861850    0.03466484     0.03057444    8.474675      1    236    0.0039460   
+    ##        2    0.2384281    0.05684796     0.04882114    7.082247      2    235    0.0010312   
+    ##        3    0.2434627    0.05927408     0.04721349    4.914692      3    234    0.0024904   
+    ##  ────────────────────────────────────────────────────────────────────────────────────────── 
+    ##    Note. Models estimated using sample size of N=238
+    ## 
+    ## 
+    ##  Model Comparisons                                                              
+    ##  ────────────────────────────────────────────────────────────────────────────── 
+    ##    Model         Model    ΔR²            F            df1    df2    p           
+    ##  ────────────────────────────────────────────────────────────────────────────── 
+    ##        1    -        2    0.022183123    5.5272466      1    235    0.0195498   
+    ##        2    -        3    0.002426121    0.6034833      1    234    0.4380367   
+    ##  ────────────────────────────────────────────────────────────────────────────── 
+    ## 
+    ## 
+    ##  MODEL SPECIFIC RESULTS
+    ## 
+    ##  MODEL 1
+    ## 
+    ##  Model Coefficients - BI_A                                                                                  
+    ##  ────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+    ##    Predictor                         Estimate     SE            t           p             Stand. Estimate   
+    ##  ────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+    ##    Intercept                         2.8881911    0.30883571    9.351869    < .0000001                      
+    ##    bildungsabschlussforregression    0.2083189    0.07155947    2.911130     0.0039460          0.1861850   
+    ##  ────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+    ## 
+    ## 
+    ##  MODEL 2
+    ## 
+    ##  Model Coefficients - BI_A                                                                                  
+    ##  ────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+    ##    Predictor                         Estimate     SE            t           p             Stand. Estimate   
+    ##  ────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+    ##    Intercept                         2.3983501    0.37012892    6.479769    < .0000001                      
+    ##    bildungsabschlussforregression    0.1893807    0.07133907    2.654656     0.0084815          0.1692590   
+    ##    ATI                               0.1587761    0.06753529    2.351010     0.0195498          0.1498987   
+    ##  ────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+    ## 
+    ## 
+    ##  MODEL 3
+    ## 
+    ##  Model Coefficients - BI_A                                                                                   
+    ##  ─────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+    ##    Predictor                         Estimate      SE            t            p            Stand. Estimate   
+    ##  ─────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+    ##    Intercept                         2.23261144    0.42748668    5.2226456    0.0000004                      
+    ##    bildungsabschlussforregression    0.18267161    0.07191976    2.5399365    0.0117355         0.16326271   
+    ##    ATI                               0.15792734    0.06760116    2.3361630    0.0203282         0.14909736   
+    ##    BF_Offenheit                      0.04723040    0.06079796    0.7768419    0.4380367         0.04963672   
+    ##  ───────────────────────────────────────────────────────────────────────────────────────────────────────────
+
 *Einfache Unterschiedshypothese*
 
 *H5* Personen, die in urbanen Regionen leben, haben ein größeres
 Vertrauen in bei einem Chatbot für Rückfragen in der Kommunalverwaltung
 als Personen, die in ländlichen Regionen leben. (Unverbundener T-Test)
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-9-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-10-1.png)
 
 *H6* Personen mit einer höheren Neigung, Technik zu vertrauen haben eine
 höhere Nutzungsintention bei einem Chatbot für Rückfragen in der
 Kommunalverwaltung als Personen mit einer geringen Neigung, Technik zu
 vertrauen. (Unverbundener T-Test)
 
-    ## Warning: The following aesthetics were dropped during statistical transformation: ymin
-    ## and ymax.
-    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
-    ##   the data.
-    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
-    ##   variable into a factor?
-
-![](Readme_files/figure-markdown_strict/unnamed-chunk-11-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-12-1.png)
 
 *H7* Die Nutzungsintention von BürgerInnen bei einem Chatbot für
 Rückfragen in der Kommunalverwaltung unterscheidet sich von der
@@ -102,14 +167,7 @@ Nutzungsintention von BürgerInnen bei einem Chatbot für die
 Formularausfüllung in der Kommunalverwaltung. \[Within-subject-design
 (Verbundener T- Test)\]
 
-    ## Warning: The following aesthetics were dropped during statistical transformation: ymin
-    ## and ymax.
-    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
-    ##   the data.
-    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
-    ##   variable into a factor?
-
-![](Readme_files/figure-markdown_strict/unnamed-chunk-13-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-14-1.png)
 
 *Komplexe Unterschiedshypothese*
 
@@ -146,4 +204,4 @@ Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
     ## Warning: Removed 5 rows containing non-finite outside the scale range
     ## (`stat_bin()`).
 
-![](Readme_files/figure-markdown_strict/unnamed-chunk-15-1.png)
+![](Readme_files/figure-markdown_strict/unnamed-chunk-16-1.png)
