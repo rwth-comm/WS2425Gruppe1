@@ -74,13 +74,15 @@ cor.test(df$Age, df$TIA_A)
 ```{r echo=FALSE}
 ggplot(df) +
   aes(x = Age, y = TIA_A) +
-  geom_jitter(colour = "#112446") +
+  geom_point(colour = "#112446") +
+  geom_smooth(method = "lm") +
+  scale_y_continuous(limits = c(1,6), breaks = c(1:6)) +
   labs(
-    x = "Alter in Jahren",
-    y = "Vertrauen in KI",
+    x = "Alter in Jahren [18-82]",
+    y = "Vertrauen in KI [1-6]",
     title = paste0("Zusammenhang zwischen Alter und Vetrauen n = (", nrow(df), ")"),
-    subtitle = "Jitter-Plot des Zusammenhangs zwischen Alter und Vetrauen in KI-erstellte Gebührenbescheide",
-    caption = ""
+    subtitle = "Punktdiagramm mit linearer Regressionsgeraden",
+    caption = "Schattierung zeigt 95%-Konfidenzbereich der Regressionsgeraden"
   ) +
   theme_minimal()
 
@@ -119,19 +121,18 @@ cor.test(df$Age, df$BI_C)
 ```{r echo=FALSE}
 ggplot(df) +
   aes(x = Age, y = BI_C) +
-  geom_jitter(colour = "#112446") +
+  geom_point(colour = "#112446") +
+  geom_smooth(method = "lm") +
+  scale_y_continuous(limits = c(1,6), breaks = c(1:6)) +
   labs(
-    x = "Alter",
-    y = "Nutzungsintention von KI",
-    title = paste0("Zusammenhangs zwischen Alter und der Nutzungsintention n = (", nrow(df), ")"),
-    subtitle = "Jitter-Plot des Zusammenhangs zwischen dem Alter 
-    und der Nutzungsintention von Bürger*innen bei einem Chatbot 
-    für Formularausfüllung in der Kommunalverwaltung. ",
-    caption = ""
+    x = "Alter in Jahren [18-82]",
+    y = "Nutzungsintention von KI [1-6]",
+    title = paste0("Zusammenhang zwischen Alter und Nutzungsintention n = (", nrow(df), ")"),
+    subtitle = "Punktdiagramm mit linearer Regressionsgeraden",
+    caption = "Schattierung zeigt 95%-Konfidenzbereich der Regressionsgeraden"
   ) +
   theme_minimal()
 ```
-
 
 *Komplexe Zusammenhangshypothese*
 
@@ -232,7 +233,7 @@ ggplot() +
 
 *H8* Geschlecht hat einen Einfluss auf die Nutzungsintention und das Vertrauen von Bürger*innen in einen KI-gestützten Dienst für Gebührenbescheide in der Kommunalverwaltung. (Einfaktorielle MANOVA)
 ```{r echo=FALSE}
-mancova(df, factors = "Gender", deps = c("BI_A", "TIA_A"))
+jmv::mancova(df.short, deps = c(BI_A, TIA_A), factors = c(Gender), multivar = "wilks")
 ```
 ```{r echo=FALSE}
 df %>% 
@@ -240,9 +241,8 @@ df %>%
   group_by(Gender) %>% 
   summarise(Mean = mean(BI_A, na.rm = TRUE), SE = plotrix::std.error(BI_A, na.rm = TRUE)*1.96) %>% 
 ggplot() +
-  aes(x = Gender, weight = Mean, ymin = Mean - SE, ymax = Mean + SE) +
-  geom_bar(fill = aachen_color("blue50")) +
-  geom_errorbar( width = 0.2) +
+  aes(x = Gender, y = Mean, ymin = Mean - SE, ymax = Mean + SE) +
+  geom_point(fill = aachen_color("blue50")) +
   labs(
     x = "Gender",
     y = "Nutzungsintention",
@@ -259,9 +259,8 @@ df %>%
   group_by(Gender) %>% 
   summarise(Mean = mean(TIA_A, na.rm = TRUE), SE = plotrix::std.error(TIA_A, na.rm = TRUE)*1.96) %>% 
 ggplot() +
-  aes(x = Gender, weight = Mean, ymin = Mean - SE, ymax = Mean + SE) +
-  geom_bar(fill = aachen_color("blue50")) +
-  geom_errorbar( width = 0.2) +
+  aes(x = Gender, y = Mean, ymin = Mean - SE, ymax = Mean + SE) +
+  geom_point(fill = aachen_color("blue50")) +
   labs(
     x = "Gender",
     y = "Vertrauen",
@@ -274,6 +273,32 @@ ggplot() +
   theme_minimal()
 ```
 
+df.short %>% 
+group_by (Gender) %>% 
+summarise (n = n(), mean(TIA_A))
 
 
+jmv::ANOVA(df, dep = "TIA_A", factors = c("Gender")
+emMeans = list("Gender")
+emmPlots = TRUE, emmTables = TRUE)
+
+jmv::ANOVA(df, dep = "BI_A", factors = c("Gender"))
+
+df.short <- df[,c(3,50,52)]
+
+df.short <- df.short[df.short$Gender == "Männlich" | df.short$Gender == "Weiblich", ]
+
+df.short <- df.short[df.short$Gender %in% c("Männlich", "Weiblich") & !is.na(df.short$Gender), ]
+ 
+colnames(df.short)
+
+df <- df[df$Gender == "Männlich" | df$Gender == "Weiblich", ]
+
+df <- df[df$Gender %in% c("Männlich", "Weiblich") & !is.na(df$Gender), ]
+
+jmv::mancova(df.short, deps = c(BI_A, TIA_A), factors = c(Gender), multivar = "wilks")
+
+jmv::ANOVA(df, dep = "BI_A", factors = c("Gender"))
+
+jmv::ANOVA(df, dep = "TIA_A", factors = c("Gender"))
 

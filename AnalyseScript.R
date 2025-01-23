@@ -64,9 +64,9 @@ scores$alpha
 data <- bind_cols(raw.short, scores$scores) 
 
 # Daten exprotieren ---- 
-write_rds(data, "data/data.rds") 
+write_rds(data, "data/data.rds")
 
-
+sd(data)
 
 
 install.packages("pwr")
