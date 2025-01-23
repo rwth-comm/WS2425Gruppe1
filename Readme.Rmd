@@ -236,41 +236,39 @@ ggplot() +
 jmv::mancova(df.short, deps = c(BI_A, TIA_A), factors = c(Gender), multivar = "wilks")
 ```
 ```{r echo=FALSE}
-df %>% 
-  filter(Gender == "Männlich" | Gender == "Weiblich") %>% 
-  group_by(Gender) %>% 
-  summarise(Mean = mean(BI_A, na.rm = TRUE), SE = plotrix::std.error(BI_A, na.rm = TRUE)*1.96) %>% 
+haupteffekt1 %>% 
 ggplot() +
-  aes(x = Gender, y = Mean, ymin = Mean - SE, ymax = Mean + SE) +
-  geom_point(fill = aachen_color("blue50")) +
-  labs(
-    x = "Gender",
-    y = "Nutzungsintention",
-    title = paste0("Einfluss von Geschlecht auf Nutzungsintention n = (", nrow(df), ")"),
-    subtitle = "Balkendiagramm für den Einfluss des Geschlechts
-    auf die Nutzungsintention eines KI-Dienstes für 
-    Gebührenbescheide in der Kommunalverwaltung",
-    caption = " "
-  ) +
-  theme_minimal()
-
-df %>% 
-  filter(Gender == "Männlich" | Gender == "Weiblich") %>% 
-  group_by(Gender) %>% 
-  summarise(Mean = mean(TIA_A, na.rm = TRUE), SE = plotrix::std.error(TIA_A, na.rm = TRUE)*1.96) %>% 
+aes(x = Gender, y = mean, colour = Gender, ymin = lower, ymax = upper) +
+geom_errorbar(width = 0.2, colour = aachen_color("black")) +
+geom_point(size = 3) +
+scale_colour_manual(values=aachen_color("orange", "purple")) +
+scale_x_discrete() +
+ylim(3,4.5) +
+theme_gray() +
+labs(title = "Haupteffekt 2 (Geschlecht auf Vertrauen)",
+     subtitle = "Mittelwertvergleich im Punktdiagramm",
+     x = "Geschlecht",
+     y = "Vertrauen",
+     colour = "",
+     caption = "y-Achse zur besseren Übersicht skaliert") +
+     theme_minimal()
+     
+haupteffekt2 %>% 
 ggplot() +
-  aes(x = Gender, y = Mean, ymin = Mean - SE, ymax = Mean + SE) +
-  geom_point(fill = aachen_color("blue50")) +
-  labs(
-    x = "Gender",
-    y = "Vertrauen",
-    title = paste0("Einfluss von Geschlecht auf Vertrauen n = (", nrow(df), ")"),
-    subtitle = "Balkendiagramm für den Einfluss des Geschlechts
-    auf das Vertrauen eines KI-Dienstes für 
-    Gebührenbescheide in der Kommunalverwaltung",
-    caption = " "
-  ) +
-  theme_minimal()
+aes(x = Gender, y = mean, colour = Gender, ymin = lower, ymax = upper) +
+geom_errorbar(width = 0.2, colour = aachen_color("black")) +
+geom_point(size = 3) +
+scale_colour_manual(values=aachen_color("orange", "purple")) +
+scale_x_discrete() +
+ylim(3,4.5) +
+theme_gray() +
+labs(title = "Haupteffekt 1 (Geschlecht auf Nutzungsintention)",
+     subtitle = "Mittelwertvergleich im Punktdiagramm",
+     x = "Geschlecht",
+     y = "Nutzungsintention",
+     colour = "",
+     caption = "y-Achse zur besseren Übersicht skaliert") +
+     theme_minimal()
 ```
 
 df.short %>% 
@@ -278,8 +276,8 @@ group_by (Gender) %>%
 summarise (n = n(), mean(TIA_A))
 
 
-jmv::ANOVA(df, dep = "TIA_A", factors = c("Gender")
-emMeans = list("Gender")
+jmv::ANOVA(df, dep = "TIA_A", factor = c("Gender"),
+emMeans = list("Gender"),
 emmPlots = TRUE, emmTables = TRUE)
 
 jmv::ANOVA(df, dep = "BI_A", factors = c("Gender"))
@@ -301,4 +299,55 @@ jmv::mancova(df.short, deps = c(BI_A, TIA_A), factors = c(Gender), multivar = "w
 jmv::ANOVA(df, dep = "BI_A", factors = c("Gender"))
 
 jmv::ANOVA(df, dep = "TIA_A", factors = c("Gender"))
+
+df.short %>% 
+   filter (Gender == "Männlich" | Gender == "Weiblich" ) %>% 
+   droplevels() -> df.short
+   
+result <- jmv::ANOVA(df.short, dep = "TIA_A", factor = c("Gender"),
+          emMeans = list("Gender"),
+          emmPlots = TRUE, emmTables = TRUE)
+          
+haupteffekt1 <- result$emm[[1]]$emmTable$asDF
+
+result2 <- jmv::ANOVA(df.short, dep = "BI_A", factor = c("Gender"),
+emMeans = list("Gender"),
+emmPlots = TRUE, emmTables = TRUE)
+
+haupteffekt2 <- result2$emm[[1]]$emmTable$asDF
+
+haupteffekt1 %>% 
+ggplot() +
+aes(x = Gender, y = mean, colour = Gender, ymin = lower, ymax = upper) +
+geom_errorbar(width = 0.2, colour = aachen_color("black")) +
+geom_point(size = 3) +
+scale_colour_manual(values=aachen_color("orange", "purple")) +
+scale_x_discrete() +
+ylim(3,4.5) +
+theme_gray() +
+labs(title = "Haupteffekt 2 (Geschlecht auf Vertrauen)",
+     subtitle = "Mittelwertvergleich im Punktdiagramm",
+     x = "Geschlecht",
+     y = "Vertrauen",
+     colour = "",
+     caption = "y-Achse zur besseren Übersicht skaliert") +
+     theme_minimal()
+     
+haupteffekt2 %>% 
+ggplot() +
+aes(x = Gender, y = mean, colour = Gender, ymin = lower, ymax = upper) +
+geom_errorbar(width = 0.2, colour = aachen_color("black")) +
+geom_point(size = 3) +
+scale_colour_manual(values=aachen_color("orange", "purple")) +
+scale_x_discrete() +
+ylim(3,4.5) +
+theme_gray() +
+labs(title = "Haupteffekt 1 (Geschlecht auf Nutzungsintention)",
+     subtitle = "Mittelwertvergleich im Punktdiagramm",
+     x = "Geschlecht",
+     y = "Nutzungsintention",
+     colour = "",
+     caption = "y-Achse zur besseren Übersicht skaliert") +
+     theme_minimal()
+
 
